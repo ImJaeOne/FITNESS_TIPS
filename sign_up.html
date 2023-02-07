@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>SIGN UP</title>
+        <style>
+            a:link{
+                text-decoration: none;
+            }
+            a:visited{
+                text-decoration: none;
+                color: black;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            header{         
+                text-align: center;
+                font-size: 100px;
+                color: black;
+            }
+            section{
+                width: 80%;
+                float: right;
+                font-size: 50px;
+            }
+            input{
+                height: 50px;
+                font-size: 50px;
+                border: none;
+                outline: none;
+            }
+        </style>
+    </head>
+    <body>
+        <script></script>
+        <header>
+            <a href="main.html">FITNESS TIPS</a>
+        </header>
+        <hr style="border:solid 10px black">
+        <section>
+            <div>
+                <span>
+                    ID
+                </span>
+                <span>
+                    <input type="text" name="login_name">
+                </span>
+                <span style="float:right;">
+                    <input type="button" value="중복확인" style="height: 70px; background-color: white;" onclick="alert('사용할 수 있는 아이디입니다.')">
+                </span>
+                <hr style="border:solid 5px black">
+            </div>
+            <div>
+                <span>
+                    PW
+                </span>
+                <span>
+                    <input type="password" name="login_password">
+                </span>
+                <hr style="border:solid 5px black">
+            </div>
+            <div>
+                <span>
+                    NAME
+                </span>
+                <span>
+                    <input type="text" name="name">
+                </span>
+                <hr style="border:solid 5px black">
+            </div>
+            <div style="text-align:center">
+                <a herf="#" onclick="alert('회원 가입 완료')">✔</a>
+            </div>
+        </section>
+    </body>
+</html>
