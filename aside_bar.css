@@ -1,0 +1,47 @@
+body{
+    font-family: 'Noto Sans Kr', 'sans-serif';
+}
+a:link{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    text-decoration: none;
+    color: white;
+}
+#banner{
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 152px;
+    width: 175px;
+    border-radius: 5%;
+}
+#banner .icon img{
+    border-radius: 50%;
+}
+#banner .icon{
+    text-align: center;
+    margin: 20px;
+}
+#banner .category{
+    font-size: 20px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+#banner .category ul{
+    padding: 0px;
+}
+#banner .category li{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#banner .category summary{
+    font-weight: bold;
+}
+#banner .category input{
+    width: 2em;
+    border-radius: 30%;
+}
