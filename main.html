@@ -3,45 +3,17 @@
     <head>
         <meta charset="UTP-8">
         <title>MAIN</title>
+        <link rel="stylesheet" href="aside_bar.css">
         <style>
-            a:link{
-                text-decoration: none;
-            }
-            a:visited{
-                text-decoration: none;
-                color: black;               
-            }
-            a:hover{
-                text-decoration-line: underline;
-            }
+            
             header{         
                 text-align: center;
                 font-size: 100px;
                 color: black;
             }
-            nav{
+            .top_bar{
                 text-align: right;
                 font-size: 30px;
-            }
-            .banner_left{
-                display: inline-block;
-                position: fixed;
-                left: 0px;
-                width: 13%;
-                background-color: gray;
-                font-size: 30px;
-                color: black;
-                text-decoration-line: underline;
-            }
-            .banner_right{
-                display: inline-block;
-                position: fixed;
-                right: 0px;
-                width: 12.5%;
-                background-color: gray;
-                font-size: 22px;
-                color: black;
-                text-decoration-line: underline;
             }
             section{
                 margin: 10px;
@@ -54,11 +26,117 @@
         <header>FITNESS TIPS</header>
         <hr style="border:solid 10px black">
         <nav>
-            <ul>
+            <ul class="top_bar">
                 <li style="display: inline-block">로그인</li>
                 <li style="display: inline-block; margin-left: 30px;"><a href="sign_up.html">회원 가입</a></li>
             </ul>
         </nav>
+        <!--왼쪽 사이드바-->
+        <div>
+            <aside>
+                <div id="banner">
+                    <!--덤벨 아이콘 / 누르면 베너 열리도록 후에 작업-->
+                    <div class="icon">
+                        <img src="덤벨 아이콘.jpg" width="100" heigt="100" sizes="100px">
+                    </div>
+                    <div class="category">
+                        <!--운동 종류-->
+                        <nav>
+                            <div>
+                                <details>
+                                    <summary>
+                                        <span>운동종류</span>
+                                    </summary>                                        
+                                    <ul>
+                                        <li>
+                                            <details>
+                                                <summary>등</summary>
+                                            </details>
+                                        </li>
+                                        <li>
+                                            <details>
+                                                <summary>가슴</summary>
+                                            </details>
+                                        </li>
+                                        <li>
+                                            <details>
+                                                <summary>어깨</summary>
+                                                <li>사이드 레터럴 레이즈</li>
+                                                <li>밀리터리 프레스</li>
+                                                <li>덤벨 프레스</li>
+                                                <li><a href="exercise.html">업라이트 로우</a></li>
+                                            </details>
+                                        </li>
+                                        <li>
+                                            <details>
+                                                <summary>하체</summary>
+                                            </details>
+                                        </li>
+                                    </ul>
+                                </details>
+                            </div>
+                        </nav>
+                    </div>
+                    <!--자유 게시판-->
+                    <div class="category">
+                        <nav>
+                            <details>
+                                <summary>
+                                    <span>자유게시판</span>
+                                </summary>
+                                <ul>
+                                    <li>글 목록</li>
+                                    <li>글 쓰기</li>
+                                </ul>
+                            </details>
+                        </nav>
+                    </div>
+                    <!--1rm 측정기-->
+                    <div class="category">
+                        <nav>
+                            <details>
+                                <!--후에 폼 태그 넣기-->
+                                <summary>
+                                    <span>1RM 측정기</span>
+                                </summary>
+                                <ul>
+                                    <li>
+                                        <details>
+                                            <summary>SQUAT</summary>
+                                            <div>
+                                                <span>
+                                                    <input type="text" name="SQUAT_REPS">reps
+                                                </span>
+                                                <span>
+                                                    <input type="text" name="SQUAT_SET">set
+                                                </span>
+                                                <span>
+                                                    <input type="image" src="검색.jpg" alt="SQUAT 1RM">
+                                                </span>
+                                            </div>
+                                        </details>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <details>
+                                            <summary>DEADLIFT</summary>
+                                        </details>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <details>
+                                            <summary>BENCHPRESS</summary>
+                                        </details>
+                                    </li>
+                                </ul>
+                            </details>
+                        </nav>
+                    </div>
+                </div>
+            </aside>
+        </div>
         <!--섹션에 들어갈 부분은 자바로 들여올 예정-->
         <section style="text-align: center; position: relative; left: 12.5%;">
             <div style="height:600px">
@@ -66,19 +144,5 @@
             </div>
             <div style="height:600px">운동 달성률</div>
         </section>
-        <aside class="banner_left">
-            운동 종류
-            <div>•등&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▼</div>
-            <div>•가슴&nbsp;&nbsp;&nbsp;&nbsp;▼</div>
-            <div>•하체&nbsp;&nbsp;&nbsp;&nbsp;▼</div>
-            <div><a href="exercise.html">•어깨&nbsp;&nbsp;&nbsp;&nbsp;▼</a></div>
-            자유게시판
-        </aside>
-        <aside class="banner_right">
-            <div>당신의 1RM은?</div>
-            <div>SQUAT</div>
-            <div>DEADLIFT</div>
-            <div>BENCHPRESS</div>
-        </aside>
     </body>
 </html>
