@@ -1,0 +1,28 @@
+.message_board_top .title{
+    font-size: 30px;
+}
+.message_board_top .write{
+    font-size: 25px; float:right;
+}
+.message_board_top hr{
+    border:solid 5px black; 
+    margin: 0px; 
+    margin-top: 10px;
+}
+.message_board_content ul{
+    font-size: 20px;
+    list-style: none;
+}
+.message_board_content hr{
+    border:solid 3px black; 
+    margin: 0px; 
+    margin-top: 10px;
+}
+.page ol{
+    text-align: center;
+}
+.page li{
+    display: inline;
+    border: solid 3px;
+    font-size: 20px;
+}
