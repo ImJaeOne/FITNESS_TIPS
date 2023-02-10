@@ -1,7 +1,4 @@
-body{
-    font-family: 'Noto Sans Kr', 'sans-serif';
-}
-aside a:link{
+a:link{
     text-decoration: none;
     color: white;
 }
@@ -14,8 +11,8 @@ aside a:visited{
     color: white;
     position: fixed;
     top: 200px;
-    width: 175px;
-    border-radius: 5%;
+    width: 200px;
+    border-radius: 10px;
 }
 #banner .icon img{
     border-radius: 50%;
