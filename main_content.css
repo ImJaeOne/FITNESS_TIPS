@@ -1,0 +1,54 @@
+#content #plan{
+    border: 5px solid black;
+}
+#content #achievement{
+    display:inline-flexbox;
+    margin-top: 10px;
+    border: 5px solid black;
+}
+#content .header{
+    font-size: 50px;
+}
+#content #plan .list{
+    background:rgb(142, 137, 137);
+} 
+#content #plan .list label{
+    cursor: pointer;
+    font-size: 40px;
+    border: 3px solid black;
+    width: 50px;
+}
+#content #plan .list label em{
+    justify-content: flex-end;
+}
+#content #plan input[id*='exercise']{
+    display: none;
+}
+#content #plan input[id*='exercise'] + label + div{
+    max-height: 0;
+    transition: all .35s;
+    overflow:hidden;
+    background: rgb(180, 175, 175);
+    font-size:11px;
+}
+#content #plan input[id*='exercise'] + label + div p{
+    font-size: 25px;
+}
+#content #plan input[id='exercise_back']:checked + label + div {
+    max-height: 200px;
+}
+#content #plan input[id='exercise_chest']:checked + label + div {
+    max-height: 200px;
+}
+#content #plan input[id='exercise_leg']:checked + label + div {
+    max-height: 200px;
+}
+#content #plan input[id='exercise_shoulder']:checked + label + div {
+    max-height: 200px;
+}
+#content #plan .list div p{
+    border: 3px solid black;
+    margin: 0px;
+    padding-left: 50px;
+    margin-bottom: 2.4px;
+}

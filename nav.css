@@ -21,7 +21,7 @@
 #top_bar .item{
     margin-left: 20px;
     margin-right: 20px;
-    text-align: center;
+    text-align: end;
 }   
 #top_bar .item #login,#join{
     display: none;
@@ -32,12 +32,12 @@
 #top_bar .item form input{
     width: 100px;
 }
-#top_bar .item input[id="login"] + label + div{
+#top_bar .item input[id="login"] + label + div {
     color: black;
     overflow: hidden;
-    transition: all .35s;
+    transition: all 0.35s;
     max-height: 0px;
 }
-#top_bar .item input[id="login"]:checked + label + div{
+#top_bar .item input[id="login"]:checked + label + div {
     max-height: 45px;
 }
