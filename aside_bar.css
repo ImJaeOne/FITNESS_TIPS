@@ -1,6 +1,9 @@
-a:link{
+aside a:link{
     text-decoration: none;
     color: white;
+}
+aside a:hover{
+    text-decoration-line:white;
 }
 aside a:visited{
     text-decoration: none;

@@ -1,0 +1,43 @@
+#top_bar label:hover{
+    text-decoration-line: underline;
+}
+#top_bar a:link{
+    text-decoration: none;
+    color: black;
+}
+#top_bar a:hover{
+    text-decoration-line: underline;
+}
+#top_bar a:visited{
+    text-decoration: none;
+    color: black;
+}
+#top_bar{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px;
+    font-size: 30px;
+}
+#top_bar .item{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}   
+#top_bar .item #login,#join{
+    display: none;
+}
+#top_bar .item label{
+    cursor: pointer;
+}
+#top_bar .item form input{
+    width: 100px;
+}
+#top_bar .item input[id="login"] + label + div{
+    color: black;
+    overflow: hidden;
+    transition: all .35s;
+    max-height: 0px;
+}
+#top_bar .item input[id="login"]:checked + label + div{
+    max-height: 45px;
+}
