@@ -6,6 +6,8 @@
         <link rel="stylesheet" href="aside_bar.css">
         <link rel="stylesheet" href="nav.css">
         <link rel="stylesheet" href="main_content.css">
+        <link rel="stylesheet" href="exercise.css">
+        <link rel="stylesheet" href="message_board.css">
         <style> 
             header{        
                 text-align: center;
@@ -23,7 +25,23 @@
             #content{
                 margin-top: 20px;
                 margin-left: 220px;
-                margin-right: 220px;
+            }
+            .exercise_list, .exercise_list_{
+                display: none
+            }
+            .exercise_list + label{
+                cursor: pointer;
+            }
+            .exercise_list_ + label{
+                cursor: pointer;
+            }
+            input[class="exercise_list"] + label + div{
+                max-height: 0px;
+                overflow: hidden;
+                transition: all .35s;
+            }
+            input[class="exercise_list"]:checked + label + div{
+                max-height: 20px;
             }
         </style>
     </head>
@@ -162,44 +180,24 @@
         <!--섹션에 들어갈 부분은 자바로 들여올 예정-->
         <main id="content">
             <section>
-                <div id="plan">
-                    <div class="header">오늘의 목표</div>                       
-                        <div class="list">
-                            <div>
-                                <input type="checkbox" id="exercise_back">
-                                <label for="exercise_back">등<em>▼</em></label>
-                                <div>
-                                    <p>풀업 12reps 4set</p>
-                                    <p>데드리프트 12reps 4set</p>
-                                </div>
-                            </div>
-                            <div>
-                                <input type="checkbox" id="exercise_chest">
-                                <label for="exercise_chest">가슴<em>▼</em></label>
-                                <div>
-                                    <p>예정되어 있지 않습니다.</p>
-                                </div>
-                            </div>
-                            <div>
-                                <input type="checkbox" id="exercise_leg">
-                                <label for="exercise_leg">하체<em>▼</em></label>
-                                <div>
-                                    <p>예정되어 있지 않습니다.</p>
-                                </div>
-                            </div>
-                            <div>
-                                <input type="checkbox" id="exercise_shoulder">
-                                <label for="exercise_shoulder">어깨<em>▼</em></label>
-                                <div>
-                                    <p>사이드 레터럴 레이즈 12reps 4set</p>
-                                    <p>밀리터리 프레스 12reps 4set</p>
-                                </div>
-                            </div>
-                        </div>                   
+                <div>
+                    내 운동 목록
                 </div>
-                <div id="achievement">
-                    <div class="header">운동 달성률</div>
-                    <div><img src="달성률.jpg" style="width:100%"></div>
+                <div>
+                    <input type="checkbox" class="exercise_list"><label>어깨<em>▼</em></label>
+                    <div>
+                        <div>
+                            <input type="checkbox" class="exercise_list_"><label>업라이트 로우<input type="checkbox" class="list_select"></label>
+                            <div>
+                                <span>
+                                    <input type="text">세트
+                                </span>
+                                <span>
+                                    <input type="text">횟수
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>

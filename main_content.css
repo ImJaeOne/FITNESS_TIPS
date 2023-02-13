@@ -1,21 +1,25 @@
 #content #plan{
-    border: 5px solid black;
+    background:rgb(142, 137, 137);
 }
 #content #achievement{
-    display:inline-flexbox;
     margin-top: 10px;
-    border: 5px solid black;
 }
 #content .header{
+    padding-left: 10px;
     font-size: 50px;
 }
 #content #plan .list{
+    position: relative;
     background:rgb(142, 137, 137);
 } 
+#content #plan .list em{
+    position:absolute;
+    right:10px;
+} 
 #content #plan .list label{
+    padding-left: 20px;
     cursor: pointer;
     font-size: 40px;
-    border: 3px solid black;
     width: 50px;
 }
 #content #plan .list label em{
@@ -47,7 +51,6 @@
     max-height: 200px;
 }
 #content #plan .list div p{
-    border: 3px solid black;
     margin: 0px;
     padding-left: 50px;
     margin-bottom: 2.4px;
