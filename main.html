@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="main_content.css">
         <link rel="stylesheet" href="exercise.css">
         <link rel="stylesheet" href="message_board.css">
+        <link rel="stylesheet" href="exercise_list.css">
         <style> 
             header{        
                 text-align: center;
@@ -20,29 +21,13 @@
                 justify-content: center;
             }
             main{
-                width: 65%
+                width: 80%
             }
             #content{
                 margin-top: 20px;
                 margin-left: 220px;
             }
-            .exercise_list, .exercise_list_{
-                display: none
-            }
-            .exercise_list + label{
-                cursor: pointer;
-            }
-            .exercise_list_ + label{
-                cursor: pointer;
-            }
-            input[class="exercise_list"] + label + div{
-                max-height: 0px;
-                overflow: hidden;
-                transition: all .35s;
-            }
-            input[class="exercise_list"]:checked + label + div{
-                max-height: 20px;
-            }
+            
         </style>
     </head>
     <body>
@@ -179,27 +164,25 @@
         </div>
         <!--섹션에 들어갈 부분은 자바로 들여올 예정-->
         <main id="content">
-            <section>
-                <div>
+                <div class="header">
                     내 운동 목록
                 </div>
-                <div>
-                    <input type="checkbox" class="exercise_list"><label>어깨<em>▼</em></label>
+                <div id="list">
+                    <input type="checkbox" id="exercise_list"><label for="exercise_list">어깨<em>▼</em></label>
                     <div>
                         <div>
-                            <input type="checkbox" class="exercise_list_"><label>업라이트 로우<input type="checkbox" class="list_select"></label>
+                            <input type="checkbox" id="exercise_list_"><label for="exercise_list_">업라이트 로우</label>
                             <div>
-                                <span>
-                                    <input type="text">세트
-                                </span>
-                                <span>
-                                    <input type="text">횟수
-                                </span>
+                                <input type="text" class="submit">세트
+                                <input type="text" class="submit">회
+                                <input type="submit" value="확인">
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+                <div class="bucket">
+                    장바구니
+                </div>
         </main>
     </body>
 </html>

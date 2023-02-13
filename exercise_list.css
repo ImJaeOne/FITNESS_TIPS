@@ -1,0 +1,48 @@
+#list{
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 30px;
+}
+#exercise_list{
+    display: none
+}
+#exercise_list + label{
+    cursor: pointer;
+}
+#exercise_list_ + label{
+    cursor: pointer;
+}
+input[id="exercise_list_"]{
+    width: 30px;
+    height: 30px;
+}
+input[id="exercise_list"] + label + div{
+    max-height: 0px;
+    overflow: hidden;
+    transition: all .35s;
+}
+input[id="exercise_list"]:checked + label + div{
+    max-height: 200px;
+}
+input[id="exercise_list_"] + label + div{
+    max-height: 0px;
+    overflow: hidden;
+    transition: all .35s;
+}
+input[id="exercise_list_"]:checked + label + div{
+    max-height: 200px;
+}
+input[class="submit"]{
+    font-size: 25px;
+    width: 60px;
+    height: 30px;
+}
+.bucket{
+    position:fixed;
+    top:300px;
+    right:20px;
+    border:3px solid black;
+    width: 30%;
+    margin-left: 50px;
+    text-align: center;
+}
