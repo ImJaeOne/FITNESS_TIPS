@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="exercise.css">
         <link rel="stylesheet" href="message_board.css">
         <link rel="stylesheet" href="exercise_list.css">
+        <link rel="stylesheet" href="exercise_today.css">
         <style> 
             header{        
                 text-align: center;
@@ -26,8 +27,7 @@
             #content{
                 margin-top: 20px;
                 margin-left: 220px;
-            }
-            
+            }            
         </style>
     </head>
     <body>
@@ -164,25 +164,22 @@
         </div>
         <!--섹션에 들어갈 부분은 자바로 들여올 예정-->
         <main id="content">
-                <div class="header">
-                    내 운동 목록
-                </div>
-                <div id="list">
-                    <input type="checkbox" id="exercise_list"><label for="exercise_list">어깨<em>▼</em></label>
-                    <div>
-                        <div>
-                            <input type="checkbox" id="exercise_list_"><label for="exercise_list_">업라이트 로우</label>
-                            <div>
-                                <input type="text" class="submit">세트
-                                <input type="text" class="submit">회
-                                <input type="submit" value="확인">
-                            </div>
-                        </div>
+            <div class="header">
+                오늘의 목표
+            </div>
+            <div id="list">
+                <input type="checkbox" id="exercise_list"><label for="exercise_list">어깨<em>▼</em></label>
+                <div>
+                    <div class="list_">
+                        <input type="checkbox" id="exercise_list_"><label for="exercise_list_">업라이트 로우</label>
+                        <span>4세트 12회</span>
                     </div>
                 </div>
-                <div class="bucket">
-                    장바구니
-                </div>
+            </div>
+            <div id="finish">
+                <input type="button" class="fin">
+                <label for="fin">오늘의 운동 완료</label>
+            </div>
         </main>
     </body>
 </html>
