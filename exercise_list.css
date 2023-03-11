@@ -28,6 +28,16 @@ input[id="exercise_list_"]{
 .list_ label{
     padding-right: 10px;
 }
+.list_ input[id="exercise_list_"]{
+    width: auto;
+    position: relative;
+    top: 3px;
+}
+.list_ input{
+    width: 5em;
+    position: relative;
+    bottom: 3px;
+}
 input[id="exercise_list"] + label + div{
     max-height: 0px;
     overflow: hidden;
@@ -35,11 +45,6 @@ input[id="exercise_list"] + label + div{
 }
 input[id="exercise_list"]:checked + label + div{
     max-height: 200px;
-}
-input[class="submit"]{
-    font-size: 25px;
-    width: 60px;
-    height: 30px;
 }
 #bucket{
     width: 300px;
