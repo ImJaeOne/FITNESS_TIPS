@@ -1,0 +1,37 @@
+
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+header{         
+    text-align: center;
+    font-size: 100px;
+    color: black;
+}
+header hr{
+    border:solid 10px black; 
+    margin: 0px; 
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+section{
+    width: 80%;
+    float: right;
+    font-size: 50px;
+}
+#join input{
+    height: 50px;
+    font-size: 50px;
+    border: none;
+}
+#join hr{
+    border:solid 5px black;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}

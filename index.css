@@ -1,0 +1,22 @@
+header{        
+    text-align: center;
+    font-size: 100px;
+    color: black;
+    height: 165.2px;
+}
+header hr{
+    border:solid 10px black; 
+    margin: 0px; 
+    margin-top: 10px
+}
+header div{
+    position: flex;
+    justify-content: center;
+}
+main{
+    width: 80%
+}
+#content{
+    margin-top: 20px;
+    margin-left: 220px;
+}        
