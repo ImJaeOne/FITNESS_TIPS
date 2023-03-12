@@ -1,6 +1,9 @@
-/* 이름확인 */
-if(login_name==""){
-    document.getElementById("idError").innerHTML="아이디가 올바르지 않습니다."
-}else{
-    document.getElementById("idError").innerHTML=""
+/*아이디 조건*/
+
+/*중복 확인*/
+
+/*회원가입 완료*/
+document.getElementById("join_fin").onclick=function(){
+    alert('회원가입 성공');
+    history.back();
 }

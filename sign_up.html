@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA Compatible" content="IE-edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="sign_up.css">
-        <script src="sign_up.js"></script>
+        
         <title>SIGN UP</title>
     </head>
     <body>
@@ -14,8 +14,8 @@
             <a href="index.html">FITNESS TIPS</a>
             <hr>
         </header>
-        <section id="join">
-            <form>
+        <section>
+            <form id="join">
                 <div class="login_name">
                     <span>
                         ID
@@ -24,10 +24,10 @@
                         <input type="text" id="login_name" placeholder="아이디를 입력해주세요.">
                     </span>
                     <span style="float:right;">
-                        <input type="button" value="중복확인" style="height: 70px; background-color: white;" onclick="alert('사용할 수 있는 아이디입니다.')">
+                        <input type="button" id="id_confirm" value="중복확인" onclick="return idConfirm()">
                     </span>
                     <hr>
-                    <div id="idError" class="error"></div>
+                    <div id="idError"></div>
                 </div>
                 <div>
                     <span>
@@ -37,6 +37,7 @@
                         <input type="password" name="login_password" placeholder="비밀번호를 입력해주세요.">
                     </span>
                     <hr>
+                    <div id="pwError"></div>
                 </div>
                 <div>
                     <span>
@@ -46,6 +47,7 @@
                         <input type="password" name="confirm_password" placeholder="비밀번호를 입력해주세요.">
                     </span>
                     <hr>
+                    <div id="cf_pwError"></div>
                 </div>
                 <div>
                     <span>
@@ -55,11 +57,13 @@
                         <input type="text" name="name" placeholder="이름을 입력해주세요.">
                     </span>
                     <hr>
+                    <div id="nameError"></div>
+                </div>
+                <div style="text-align: center;">
+                    <input type="button" id="join_fin" value="✔">
                 </div>
             </form>
-            <div style="text-align:center">
-                <a herf="#" onclick="alert('회원 가입 완료')">✔</a>
-            </div>
         </section>
     </body>
+    <script src="sign_up.js"></script>
 </html>
