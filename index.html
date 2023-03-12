@@ -2,42 +2,27 @@
 <html lang="ko">
     <head>
         <meta charset="UTP-8">
-        <title>MAIN</title>
+        <meta http-equiv="X-UA Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>index</title>
+        <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="aside_bar.css">
-        <link rel="stylesheet" href="nav.css">
+        <link rel="stylesheet" href="top_bar.css">
+        <link rel="stylesheet" href="sign_up.css">
         <link rel="stylesheet" href="main_content.css">
         <link rel="stylesheet" href="exercise.css">
         <link rel="stylesheet" href="message_board.css">
         <link rel="stylesheet" href="exercise_list.css">
         <link rel="stylesheet" href="exercise_today.css">
-        <style> 
-            header{        
-                text-align: center;
-                font-size: 100px;
-                color: black;
-                height: 165.2px;
-            }
-            header div{
-                position: flex;
-                justify-content: center;
-            }
-            main{
-                width: 80%
-            }
-            #content{
-                margin-top: 20px;
-                margin-left: 220px;
-            }            
-        </style>
     </head>
     <body>
         <header>
             <div>
                 FITNESS TIPS
             </div>
-            <hr style="border:solid 10px black; margin: 0px; margin-top: 10px;">
+            <hr>
         </header>
-        <nav>
+        <div id="top_bar">
             <div id="top_bar">
                 <div class="item">
                     <input type="checkbox" id="login">
@@ -55,7 +40,7 @@
                     <label for="join"><a href="sign_up.html">회원 가입</a></label>
                 </div>
             </div>
-        </nav>
+        </div>
         <!--왼쪽 사이드바-->
         <div>
             <aside>
@@ -71,7 +56,7 @@
                                 <details>
                                     <summary>
                                         <span>&nbsp;운동종류</span>
-                                    </summary>                                        
+                                    </summary>                  
                                     <ul>
                                         <li>
                                             <details>
@@ -130,10 +115,10 @@
                                             <summary>&nbsp;SQUAT</summary>
                                             <div>
                                                 <span>
-                                                    <input type="text" name="SQUAT_REPS">&nbsp;reps
+                                                    <input type="text" name="SQUAT_REPS">&nbsp;kg
                                                 </span>
                                                 <span>
-                                                    <input type="text" name="SQUAT_SET">&nbsp;set
+                                                    <input type="text" name="SQUAT_SET">&nbsp;reps
                                                 </span>
                                                 <span>
                                                     <input type="image" src="검색.jpg" alt="SQUAT 1RM">
@@ -167,22 +152,30 @@
             <div class="header">
                 오늘의 목표
             </div>
-            <div>
-                <div id="list" style="width: 300px;">
-                    <input type="checkbox" id="exercise_list"><label for="exercise_list">어깨<em>▼</em></label>
+            <div id="achievement">
+                <div id="list">
+                    <input type="checkbox" id="exercise_list" style="margin: 0 auto;"><label for="exercise_list">어깨<em>▼</em></label>
                     <div>
                         <div class="list_">
-                            <input type="checkbox" id="exercise_list_"><label for="exercise_list_">업라이트 로우</label>
-                            <span>4세트 12회</span>
+                            <input type="checkbox" id="exercise_list_" style="text-align: left;"><label for="exercise_list_">업라이트 로우</label>
+                            <span style="text-align:end;">
+                                <input type="text">세트
+                                <input type="text">회
+                            </span>
                         </div>
                     </div>
-                <div>
-                <div id="bucket" style="width: 300px;">
-                    장바구니
+                </div>
+                <div id="bucket">
+                    <div class="bucket_header">
+                        오늘의 운동 목록
+                    </div>
+                    <div>
+                        업라이트 로우
+                    </div>
                 </div>
             </div>
             <div id="finish">
-                <button class="fin">오늘의 운동 완료</button>
+                <button class="fin">오늘의 목표에 추가</button>
             </div>
         </main>
     </body>
