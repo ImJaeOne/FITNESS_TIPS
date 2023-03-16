@@ -1,15 +1,15 @@
-header{        
+#title{        
     text-align: center;
     font-size: 100px;
     color: black;
     height: 165.2px;
 }
-header hr{
+#title hr{
     border:solid 10px black; 
     margin: 0px; 
     margin-top: 10px
 }
-header div{
+#title div{
     position: flex;
     justify-content: center;
 }
