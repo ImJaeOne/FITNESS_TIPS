@@ -15,17 +15,14 @@ const editor = new Editor({
         previewStyle: 'vertical',
     });
 
-seeHtml = function(){
-    alert(editor.getHTML());
-}
-seeMd = function(){
-    alert(editor.getMarkdown());
-}
 const cancel = document.getElementsByClassName("cancel");
-cancel.onclick = function(){
+cancel[0].onclick = function(){
+    alert('작성이 취소되었습니다.');
     history.back();
 }
+
+
 const complete = document.getElementsByClassName("complete");
-complete.onclick = function(){
+complete[0].onclick = function(){
     /*게시판 사이트로 돌아가기*/ 
 }
