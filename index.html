@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="message_board.css">
         <link rel="stylesheet" href="exercise_list.css">
         <link rel="stylesheet" href="exercise_today.css">
+        <link rel="stylesheet" href="write.css">
+        <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" /> 
     </head>
     <body>
         <header>
@@ -150,33 +152,17 @@
         <!--섹션에 들어갈 부분은 자바로 들여올 예정-->
         <main id="content">
             <div class="header">
-                오늘의 목표
+                글쓰기
             </div>
-            <div id="achievement">
-                <div id="list">
-                    <input type="checkbox" id="exercise_list" style="margin: 0 auto;"><label for="exercise_list">어깨<em>▼</em></label>
-                    <div>
-                        <div class="list_">
-                            <input type="checkbox" id="exercise_list_" style="text-align: left;"><label for="exercise_list_">업라이트 로우</label>
-                            <span style="text-align:end;">
-                                <input type="text">세트
-                                <input type="text">회
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div id="bucket">
-                    <div class="bucket_header">
-                        오늘의 운동 목록
-                    </div>
-                    <div>
-                        업라이트 로우
-                    </div>
-                </div>
-            </div>
-            <div id="finish">
-                <button class="fin">오늘의 목표에 추가</button>
+            <label for="subject" class="field">제목</label>
+            <input type="text" id="subject" required>
+	        <div id="editor"></div>
+            <div id="write_end">
+                <button class="complete">작성 완료</button>
+                <button class="cancel">작성 취소</button>
             </div>
         </main>
-    </body>
+        <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+        <script src="write.js"></script>
+    </body>   
 </html>

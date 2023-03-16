@@ -1,0 +1,17 @@
+.field{
+    font-size: 30px;
+    padding-left: 10px;
+}
+#content input[id="subject"]{
+    width: 200px;
+    height:30px;
+    position: relative;
+    bottom: 5px;
+}
+#content #editor{
+    margin-bottom: 20px;
+}
+#content #write_end{
+    display: flex;
+    justify-content: flex-end;
+}
