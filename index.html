@@ -20,7 +20,7 @@
     <body>
         <header id = "title">
             <div>
-                <input type = "button" value = "innerHTML" onclick = "setInnerHTML()">FITNESS TIPS<input type = "button" value = "cancelHTML" onclick = "setMainHTML()">
+                <input type = "button" id = "mainHTML" onclick = "MainHTML()"><label for = "mainHTML">FITNESS TIPS</label>
             </div>
             <hr>
         </header>
@@ -98,8 +98,8 @@
                                     <span>&nbsp;자유게시판</span>
                                 </summary>
                                 <ul>
-                                    <li>&nbsp;<a href="message_board.html">글 목록</a></li>
-                                    <li>&nbsp;글 쓰기</li>
+                                    <li onclick = "WriteListHTML()">&nbsp;글 목록</li>
+                                    <li onclick = "WriteHTML()">&nbsp;글 쓰기</li>
                                 </ul>
                             </details>
                         </nav>
@@ -195,7 +195,7 @@
             </div>
         </main>
         <script src="index.js"></script>
-        <script src="write.js"></script>
         <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+        <script src="write.js"></script>
     </body>   
 </html>

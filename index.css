@@ -4,6 +4,15 @@
     color: black;
     height: 165.2px;
 }
+#title #mainHTML{
+    display : none;
+}
+#title label{
+    cursor : pointer;
+}
+#title label:hover{
+    text-decoration : underline;
+}
 #title hr{
     border:solid 10px black; 
     margin: 0px; 
