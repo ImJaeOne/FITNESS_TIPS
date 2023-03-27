@@ -46,7 +46,7 @@ section{
     border:solid 5px black;
     margin: 0;
 }
-#idError{
+#join #IdError, #pwError, #cfpwError, #nameError{
     font-size: 20px;
     height: 20px;
     color:red;

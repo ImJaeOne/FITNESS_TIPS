@@ -1,4 +1,5 @@
 const content = document.getElementById("content");
+
 function MainHTML(){
     content.innerHTML = `<div id ="main_content">
     <div id="plan">
@@ -43,7 +44,7 @@ function MainHTML(){
 </div>`;
 }
 function WriteHTML(){
-    content.innerHTML = `<div class="header">
+    content.innerHTML=`<div class="header">
     글쓰기
 </div>
 <label for="subject" class="field">제목</label>
@@ -96,5 +97,64 @@ function WriteListHTML(){
         <li>5</li>
         <li>→</li>
     </ol>
+</div>`
+}
+function exerciseHTML(){
+    content.innerHTML = `<div class="exercise_name">
+    업라이트 로우
+    <input type="button"><label onclick = "exerciseListHTML()">내 운동 목록 추가</label>
+</div>
+<div><img src="upright-row.jpg" style="width: 900px; height: 600px;"></div>
+<div class="exercise_explain">
+    <p>Target muscle: Lateral Deltoid</p>
+    <p>Synergists: Anterior Deltoid, Supraspinatus, Brachialis, Brachioradialis, Biceps</p> <p>Brachii, Middle and Lower Trapezius, Serratus Anterior, Infraspinatus, Teres Minor
+    Mechanics: Compound</p>
+    <p>Force: Pull</p>
+</div>`
+}
+function exerciseListHTML(){
+    content.innerHTML = `<div class="header">
+    내 운동 목록
+</div>
+<div id="achievement">
+    <div id="list">
+        <input type="checkbox" id="exercise_list" style="margin: 0 auto;"><label for="exercise_list">어깨<em>▼</em></label>
+        <div>
+            <div class="list_">
+                <input type="checkbox" id="exercise_list_"><label for="exercise_list_">업라이트 로우</label>
+                <span style="text-align:end;">4세트 12회</span>
+            </div>
+        </div>
+    </div>
+    <div id="bucket">
+        <div class="bucket_header">
+            오늘의 운동 목록
+        </div>
+        <div>
+            업라이트 로우
+        </div>
+    </div>
+</div>
+<div id="finish">
+    <button class="fin" onclick = "AchievementHTML()">오늘의 목표에 추가</button>
+</div>`
+}
+function AchievementHTML(){
+    content.innerHTML = `<div class="header">
+    오늘의 목표
+</div>
+<div id="achievement">
+    <div id="list">
+        <input type="checkbox" id="exercise_list" style="margin: 0 auto;"><label for="exercise_list">어깨<em>▼</em></label>
+        <div>
+            <div class="list_">
+                <input type="checkbox" id="exercise_list_"><label for="exercise_list_">업라이트 로우</label>
+                <span style="text-align:end;">4세트 12회</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="finish">
+    <button class="fin">오운완</button>
 </div>`
 }
