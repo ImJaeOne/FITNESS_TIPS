@@ -109,7 +109,7 @@ ul{
     opacity: 0;
 }
 #icon .topBtn{
-    cursor: pointer;
+    cursor: pointer;position : relative;
     background-color: #000000;
     color: white;
     width: 50px;
@@ -119,13 +119,22 @@ ul{
     padding: 14px;
     transition: background-color 0.5s;
 }
-#icon .topBtn .arrow{
-    position : relative;
-}
-#icon .topBtn .arrow::after{
+
+#icon .topBtn .blackarrow{
     position : absolute;
-    left: 1px;;
-    top : 4px;
+    left: 17px;;
+    top : 20px;
+    content : '';
+    width : 16px;
+    height : 16px;
+    border-top : 5px solid #000000;
+    border-right : 5px solid #000000;
+    transform : rotate(315deg);
+}
+#icon .topBtn .whitearrow{
+    position : absolute;
+    left: 17px;;
+    top : 20px;
     content : '';
     width : 16px;
     height : 16px;
