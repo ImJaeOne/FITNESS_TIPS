@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="sign.css">
 </head>
 <body>
     <header id="header">
@@ -19,6 +20,37 @@
                 </li>
             </ul>
         </div>
+    </header>
+    <div id="member_wrap">
+        <div class="member_field">
+            <label for="join_id">
+                <span></span>
+                <span><input type="text" id="join_id" placeholder="아이디"></span>
+                <span></span>
+            </label>
+        </div>
+        <div class="member_field">
+            <label for="join_pw">
+                <span></span>
+                <span><input type="password" class=join_pw placeholder="비밀번호"></span>
+            </label>
+        </div>
+        <div class="member_field">
+            <label for="join_pwcf">
+                <span></span>
+                <span><input type="password" class=join_pwcf placeholder="비밀번호 확인"></span>
+            </label>
+        </div>            
+        <div class="member_field">
+            <label for="join_name">
+                <span></span>
+                <span><input type="text" class="join_name" placeholder="이름"></span>
+            </label>
+        </div>
     </div>
+    <footer id="footer">
+        <div class="_">©JW Corp. Patience is a virtue.</div>
+    </footer>
+    <script src="sign.js"></script>
 </body>
 </html>
