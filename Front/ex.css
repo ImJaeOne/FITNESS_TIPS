@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.korean {
+  font-family: "Noto Sans KR";
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: black;
+  color: white;
+  font-size: 200px;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
+  min-width: 660px;
+}
+
+#wrap_nav {
+  position: absolute;
+  min-width: 800px;
+  width: 100%;
+  height: 80px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  font-size: 15px;
+  bottom: 0px;
+  border-top: solid white 1px;
+}
+
+#wrap_nav li {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#wrap_nav.nav {
+  position: fixed;
+  top: 0px;
+  color: black;
+  background-color: white;
+  border-bottom: 5px solid black;
+}
+
+#wrap_nav .nav_exercise {
+  background-color: white;
+  color: black;
+}
+
+#wrap_nav [class*=nav].select {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#wrap_content {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+}
+#wrap_content #explain {
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+#wrap_content #explain #exercise_name {
+  display: flex;
+  justify-content: space-between;
+  font-size: 40px;
+  border-bottom: 10px solid black;
+  margin-bottom: 40px;
+}
+#wrap_content #explain #exercise_name .add {
+  position: relative;
+  left: -40px;
+  top: 10px;
+  cursor: pointer;
+}
+#wrap_content #explain #exercise_name .add .width {
+  position: absolute;
+  top: 11px;
+  width: 30px;
+  height: 30px;
+  border-top: 5px solid black;
+}
+#wrap_content #explain #exercise_name .add .height {
+  left: 13px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-left: 5px solid black;
+}
+#wrap_content #explain #exercise_img {
+  width: 900px;
+  height: 600px;
+  margin-bottom: 40px;
+  background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2021/11/Incline-one-arm-dumbbell-bench-press.png?ezimgfmt=ng%3Awebp%2Fngcb4");
+  background-size: contain;
+}
+#wrap_content #explain #exercise_content {
+  font-size: 30px;
+}
+#wrap_content #explain #exercise_content li {
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+#wrap_content #explain #exercise_content li span {
+  font-weight: bolder;
+}
+
+#aside_bar {
+  position: fixed;
+  right: 30px;
+  top: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 500px;
+}
+#aside_bar .aside_title {
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+#aside_bar .aside_img {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 30px;
+  background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2020/06/Overview-of-mens-weight-training-programs.png?ezimgfmt=ng%3Awebp%2Fngcb4");
+  background-size: contain;
+}
+#aside_bar .aside_name {
+  font-size: 20px;
+}
+
+#icon {
+  z-index: 9999;
+  position: fixed;
+  right: 50px;
+  bottom: 10px;
+}
+
+#icon .topBtn.scrollon {
+  animation: fadeIn 1s ease-in-out forwards;
+  display: block;
+}
+
+#icon .topBtn.scrolloff {
+  animation: fadeOut 1s ease-in-out forwards;
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    display: none;
+  }
+  to {
+    opacity: 1;
+    display: block;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    display: block;
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+#icon .topBtn {
+  cursor: pointer;
+  display: none;
+  opacity: 0;
+}
+
+#icon .topBtn {
+  cursor: pointer;
+  position: relative;
+  background-color: #000000;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  padding: 14px;
+  transition: background-color 0.5s;
+}
+
+#icon .topBtn .blackarrow {
+  position: absolute;
+  left: 16px;
+  top: 20px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-top: 5px solid #000000;
+  border-right: 5px solid #000000;
+  transform: rotate(315deg);
+}
+
+#icon .topBtn .whitearrow {
+  position: absolute;
+  left: 16px;
+  top: 20px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-top: 5px solid #ffffff;
+  border-right: 5px solid #ffffff;
+  transform: rotate(315deg);
+}
+
+#icon .searchBtn {
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  background-color: #000000;
+  flex-direction: column;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+#icon .searchBtn .search {
+  background-color: #000000;
+  border: 0;
+  border-radius: 50px;
+  font-size: 18px;
+  padding: 15px;
+  width: 50px;
+  height: 50px;
+  transition: width 0.3 ease;
+}
+
+#icon .searchBtn .searchBtn_ {
+  background-color: #000000;
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+#icon .searchBtn .searchBtn_:focus, #icon .searchBtn .search:focus {
+  outline: none;
+}
+
+#icon .searchBtn.active .search {
+  width: 200px;
+}
+
+#icon .searchBtn.active .searchBtn_ {
+  transform: translateX(-198px);
+}
+
+#icon .searchBtn .whitecircle {
+  position: absolute;
+  left: 10px;
+  top: 7px;
+  content: "";
+  width: 21px;
+  height: 21px;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+}
+
+#icon .searchBtn .whiteline {
+  position: absolute;
+  left: 16px;
+  top: 29px;
+  content: "";
+  width: 17px;
+  border: 3px solid #ffffff;
+  border-radius: 1px;
+  transform: translate3d(8px, -1px, 0) rotate(45deg);
+  background-color: #ffffff;
+}
+
+#icon .searchBtn .blackcircle {
+  position: absolute;
+  left: 10px;
+  top: 7px;
+  content: "";
+  width: 21px;
+  height: 21px;
+  border: 4px solid #000000;
+  border-radius: 50%;
+}
+
+#icon .searchBtn .blackline {
+  position: absolute;
+  left: 16px;
+  top: 29px;
+  content: "";
+  width: 17px;
+  border: 3px solid #000000;
+  border-radius: 1px;
+  transform: translate3d(8px, -1px, 0) rotate(45deg);
+  background-color: #000000;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  height: 200px;
+}
+
+#footer ._ {
+  color: #ffffff;
+}/*# sourceMappingURL=ex.css.map */
