@@ -21,33 +21,54 @@
             </ul>
         </div>
     </header>
-    <div id="member_wrap">
-        <div class="member_field">
-            <label for="join_id">
-                <span></span>
-                <span><input type="text" id="join_id" placeholder="아이디"></span>
-                <span></span>
-            </label>
+    <main id="wrap_content" class="wrap_content_sign">
+        <div id="member_wrap">
+            <div class="member_field">
+                <label for="join_id">
+                        아이디
+                </label>
+                <span>
+                    <input type="text" class="join_id">
+                </span>
+                <div class="idcf">
+                    <div class="circle">
+                        <div class="check_left"></div>
+                        <div class="check_right"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="member_field">
+                <label for="join_pw">
+                    <span>
+                        비밀번호
+                    </span>
+                    <span><input type="password" class=join_pw></span>
+                </label>
+            </div>
+            <div class="member_field">
+                <label for="join_pwcf">
+                    <span>
+                        비밀번호 확인
+                    </span>
+                    <span><input type="password" class=join_pwcf></span>
+                </label>
+            </div>            
+            <div class="member_field">
+                <label for="join_name">
+                    <span>
+                        이름
+                    </span>
+                    <span><input type="text" class="join_name"></span>
+                </label>
+            </div>
         </div>
-        <div class="member_field">
-            <label for="join_pw">
-                <span></span>
-                <span><input type="password" class=join_pw placeholder="비밀번호"></span>
-            </label>
+        <div class="confirm">
+            <div class="check">
+                <div class="check_left"></div>
+                <div class="check_right"></div>
+            </div>
         </div>
-        <div class="member_field">
-            <label for="join_pwcf">
-                <span></span>
-                <span><input type="password" class=join_pwcf placeholder="비밀번호 확인"></span>
-            </label>
-        </div>            
-        <div class="member_field">
-            <label for="join_name">
-                <span></span>
-                <span><input type="text" class="join_name" placeholder="이름"></span>
-            </label>
-        </div>
-    </div>
+    </main>
     <footer id="footer">
         <div class="_">©JW Corp. Patience is a virtue.</div>
     </footer>

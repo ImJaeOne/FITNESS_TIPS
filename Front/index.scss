@@ -15,20 +15,16 @@ body{
     font-family : 'Noto Sans KR';
 }
 
-a{
-    
-    &:link{
-        text-decoration: none;
-        color: inherit;
-    }
-    &:visited {
-        text-decoration: none;
-        color: inherit;
-    }
-    &:hover{
-        text-decoration: none;
-        color: inherit;
-    }
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    text-decoration: none;
+    color: inherit;
 }
 ul{
     list-style: none;
@@ -45,7 +41,7 @@ ul{
     margin-bottom: 60px;
 }
 #title{
-    display: flex;
+    position: flex;
     justify-content: center;
     position: absolute;
     cursor: pointer;
@@ -56,18 +52,15 @@ ul{
     min-width: 800px;
     width: 100%;
     height: 80px;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     font-size: 15px;
     bottom: 0px;
     border-top: solid white 1px;
 }
 #wrap_nav li{
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
 }
 #wrap_nav.nav{
     position: fixed;
@@ -76,90 +69,8 @@ ul{
     background-color: white;
     border-bottom: 5px solid black;
 }
-#wrap_nav .nav_exercise{
-    background-color: white;
-    color: black;
-}
-#wrap_nav [class*=nav].select{
-    background-color: #000000;
-    color: #ffffff;
-}
-#wrap_content{
-    display: grid;
-    grid-template-columns: 2.5fr 1fr;
-    #explain{
-        margin-left: 40px;
-        margin-bottom: 40px;
-        #exercise_name{
-            display: flex;
-            justify-content: space-between;
-            font-size: 40px;
-            border-bottom: 10px solid black;
-            margin-bottom: 40px;
-            .add{
-                position: relative;
-                left: -40px;
-                top: 10px;
-                cursor: pointer;
-                .width{
-                    position : absolute;
-                    top: 11px;
-                    width: 30px;
-                    height: 30px;
-                    border-top: 5px solid black;
-                }
-                .height{
-                    left: 13px;
-                    position: absolute;
-                    width: 30px;
-                    height: 30px;
-                    border-left: 5px solid black;
-                }
-            }
-        }
-        #exercise_img{
-            width: 900px;
-            height: 600px;
-            margin-bottom: 40px;
-            background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2021/11/Incline-one-arm-dumbbell-bench-press.png?ezimgfmt=ng%3Awebp%2Fngcb4");
-            background-size: contain;
-        }
-        #exercise_content{
-            li{
-                font-size: 25px;
-                margin-bottom: 10px;
-                font-weight: light;
-                span{
-                    font-size: 35px;
-                    font-weight: bold;
-                }
-            }
-        }
-    }
-}
-#aside_bar{
-    position: fixed;
-    right: 30px;
-    top: 300px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 500px;
-    .aside_title{
-        font-size: 30px;
-        font-weight: bolder;
-        margin-bottom: 30px;
-    }
-    .aside_img{
-        width: 300px;
-        height: 200px;
-        margin-bottom: 30px;
-        background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2020/06/Overview-of-mens-weight-training-programs.png?ezimgfmt=ng%3Awebp%2Fngcb4");
-        background-size: contain;
-    }
-    .aside_name{
-        font-size: 20px;
-    }
+#wrap_nav .nav_link.navLink{
+    color: #000000;
 }
 #icon{
     z-index: 9999;
@@ -299,6 +210,7 @@ ul{
     transform: translate3d(8px, -1px, 0) rotate(45deg);
     background-color: #ffffff;
 }
+/* classlist */
 #icon .searchBtn .blackcircle{
     position: absolute;
     left: 10px;
@@ -319,6 +231,18 @@ ul{
     border-radius: 1px;
     transform: translate3d(8px, -1px, 0) rotate(45deg);
     background-color: #000000;
+}
+#wrap_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#wrap_content [class*="inner"]{
+    width: 1200px;
+    height: 800px;
+    border: solid 3px black;
+    margin-bottom: 80px;
 }
 #footer{
     display: flex;

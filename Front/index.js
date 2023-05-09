@@ -1,14 +1,14 @@
 const header = document.getElementById("header");
 const wrapNav = document.getElementById("wrap_nav");
-const navLink = document.getElementsByClassName("nav_link");
+const navExercise = document.getElementsByClassName("nav_exercise")[0];
 
 window.addEventListener('scroll',function(){
     if(window.scrollY > 220){
         wrapNav.classList.add('nav');
-        navLink[0].classList.add('navLink');
+        navExercise.classList.add('select');
     }
     else{
         wrapNav.classList.remove('nav');
-        navLink[0].classList.remove('navLink');
+        navExercise.classList.remove('select');
     }
 })
