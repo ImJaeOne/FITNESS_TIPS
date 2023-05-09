@@ -48,7 +48,7 @@ ul{
     justify-content: center;
     position: absolute;
     cursor: pointer;
-    min-width: 660px;
+    min-width: 780px;
 }
 #wrap_nav {
     position: absolute;
@@ -113,8 +113,15 @@ ul{
         grid-template-columns: auto auto auto;
         grid-gap: 20px;
         .s_inner_1{
-            display: grid;
-            place-items: center;
+            a{
+                display: grid;
+                place-items: center;
+                .shoulder_1_img{
+                    background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2021/11/Incline-one-arm-dumbbell-bench-press.png?ezimgfmt=ng%3Awebp%2Fngcb4");
+                    background-size: contain;
+                }
+            }
+            //나중에 지울거...
             .shoulder_1_img{
                 background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2021/11/Incline-one-arm-dumbbell-bench-press.png?ezimgfmt=ng%3Awebp%2Fngcb4");
                 background-size: contain;

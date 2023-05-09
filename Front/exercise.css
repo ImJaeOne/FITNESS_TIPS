@@ -48,7 +48,7 @@ ul {
   justify-content: center;
   position: absolute;
   cursor: pointer;
-  min-width: 660px;
+  min-width: 780px;
 }
 
 #wrap_nav {
@@ -120,9 +120,13 @@ ul {
   grid-template-columns: auto auto auto;
   grid-gap: 20px;
 }
-#wrap_content #shoulder .s_inner_1 {
+#wrap_content #shoulder .s_inner_1 a {
   display: grid;
   place-items: center;
+}
+#wrap_content #shoulder .s_inner_1 a .shoulder_1_img {
+  background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2021/11/Incline-one-arm-dumbbell-bench-press.png?ezimgfmt=ng%3Awebp%2Fngcb4");
+  background-size: contain;
 }
 #wrap_content #shoulder .s_inner_1 .shoulder_1_img {
   background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2021/11/Incline-one-arm-dumbbell-bench-press.png?ezimgfmt=ng%3Awebp%2Fngcb4");
