@@ -9,11 +9,13 @@
 </head>
 <body>
     <header id="header">
-        <div id="title">FITNESS TIPS</div>
+        <div id="title">
+            FITNESS TIPS
+        </div>
         <!--네비게이션--> 
-        <ul id="wrap_nav">
+        <ul class="korean" id="wrap_nav">
             <li>
-                운동 종류
+                <a href="exercise.html">운동 종류</a>
             </li>
             <li>
                 게시판
@@ -34,8 +36,7 @@
                 <a href="sign_up.html" class="nav_link">회원가입</a>
             </li>
         </ul>
-        </header>
-    <!--1RM 측정기-->
+    </header>
     <main id="wrap_content">
         <div class="inner_1"></div>
         <div class="inner_2"></div>
@@ -45,13 +46,15 @@
         <div class="_">©JW Corp. Patience is a virtue.</div>
     </footer>
     <ul id="icon">
-        <li class="searchBtn">
-            <span class="circle"></span>
-            <span class="line"></span>
-        </li>
-        <li class="topBtn">
+        <div class="searchBtn">
+            <input type="text" class="search" placeholder="Search">
+            <button class="searchBtn_">
+                <div class="fas fa-seacrh"></div>
+            </button>
+        </div>
+        <div class="topBtn">
             <div class="whitearrow"></div>
-        </li>
+        </div>
     </ul>
     <script src="index.js"></script>
     <script src="icon.js"></script>
