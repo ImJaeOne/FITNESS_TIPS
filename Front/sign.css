@@ -17,6 +17,10 @@
   border: 0;
   background-color: rgb(255, 255, 255);
   border: 5px solid rgb(255, 255, 255);
+  text-indent: 20px;
+}
+#member_wrap [class=join_pw] {
+  text-indent: 83px;
 }
 #member_wrap .member_field {
   position: relative;
@@ -24,20 +28,20 @@
 #member_wrap .member_field label {
   font-size: 30px;
 }
-#member_wrap .member_field .idcf {
+#member_wrap .member_field .cf {
   position: absolute;
   top: 7px;
   right: 9px;
   width: 30px;
   height: 30px;
 }
-#member_wrap .member_field .idcf .circle {
+#member_wrap .member_field .cf .circle {
   width: 30px;
   height: 30px;
   border: 3px solid black;
   border-radius: 100%;
 }
-#member_wrap .member_field .idcf .circle .check_left {
+#member_wrap .member_field .cf .circle .check_left {
   position: absolute;
   width: 15px;
   height: 10px;
@@ -46,7 +50,7 @@
   border-top: 4px solid black;
   transform: rotate(60deg);
 }
-#member_wrap .member_field .idcf .circle .check_right {
+#member_wrap .member_field .cf .circle .check_right {
   position: absolute;
   width: 20px;
   height: 9px;
@@ -55,13 +59,13 @@
   border-top: 4px solid black;
   transform: rotate(295deg);
 }
-#member_wrap .member_field .idcf .circle.correct {
+#member_wrap .member_field .cf .circle.correct {
   width: 30px;
   height: 30px;
   border: 3px solid green;
   border-radius: 100%;
 }
-#member_wrap .member_field .idcf .circle.correct .check_left {
+#member_wrap .member_field .cf .circle.correct .check_left {
   position: absolute;
   width: 15px;
   height: 10px;
@@ -70,7 +74,7 @@
   border-top: 4px solid green;
   transform: rotate(60deg);
 }
-#member_wrap .member_field .idcf .circle.correct .check_right {
+#member_wrap .member_field .cf .circle.correct .check_right {
   position: absolute;
   width: 20px;
   height: 9px;
@@ -79,13 +83,13 @@
   border-top: 4px solid green;
   transform: rotate(295deg);
 }
-#member_wrap .member_field .idcf .circle.incorrect {
+#member_wrap .member_field .cf .circle.incorrect {
   width: 30px;
   height: 30px;
   border: 3px solid red;
   border-radius: 100%;
 }
-#member_wrap .member_field .idcf .circle.incorrect .check_left {
+#member_wrap .member_field .cf .circle.incorrect .check_left {
   position: absolute;
   width: 15px;
   height: 10px;
@@ -94,7 +98,7 @@
   border-top: 4px solid red;
   transform: rotate(60deg);
 }
-#member_wrap .member_field .idcf .circle.incorrect .check_right {
+#member_wrap .member_field .cf .circle.incorrect .check_right {
   position: absolute;
   width: 20px;
   height: 9px;
