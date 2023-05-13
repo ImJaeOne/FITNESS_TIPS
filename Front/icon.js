@@ -2,6 +2,7 @@
 const topBtn = document.getElementsByClassName("topBtn")[0];
 const searchBtn = document.getElementsByClassName("searchBtn")[0];
 const searchImg = document.getElementsByClassName("fas fa-search")[0];
+const asideBar = document.getElementById("aside_bar");
 
 window.onscroll = function(){scrollfunction()};
 topBtn.addEventListener("click",topfunction);
@@ -10,17 +11,20 @@ function scrollfunction(){
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
         topBtn.classList.add('scrollon');
         topBtn.classList.remove('scrolloff');
+        asideBar.classList.add('scrollon'); //사이드바
     } else{
         topBtn.classList.add('scrolloff');
         topBtn.classList.remove('scrollon');
+        asideBar.classList.remove('scrollon');
     }
 }
 
-//footer와 만나면 색 변하도록
 function topfunction(){
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+//footer와 만나면 색 변하도록
 
 const footerElement = document.getElementById('footer').offsetHeight;
 const footerScrollheight = document.documentElement.scrollHeight - footerElement - document.documentElement.clientHeight + 30;
