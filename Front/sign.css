@@ -108,17 +108,17 @@
   transform: rotate(295deg);
 }
 
-.confirm {
+#confirm {
   cursor: pointer;
   height: 30px;
   width: 30px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.confirm .check {
+#confirm .check {
   position: relative;
 }
-.confirm .check .check_left {
+#confirm .check .check_left {
   position: absolute;
   width: 20px;
   height: 10px;
@@ -127,7 +127,7 @@
   border-top: 4px solid black;
   transform: rotate(60deg);
 }
-.confirm .check .check_right {
+#confirm .check .check_right {
   position: absolute;
   width: 34px;
   height: 10px;
