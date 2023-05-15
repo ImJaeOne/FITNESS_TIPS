@@ -167,7 +167,7 @@ ul {
   font-size: 20px;
 }
 
-#aside_bar.scrollon {
+#aside_bar.scrollon1 {
   position: fixed;
   right: 30px;
   top: 100px;
@@ -176,19 +176,19 @@ ul {
   flex-direction: column;
   height: 500px;
 }
-#aside_bar.scrollon .aside_title {
+#aside_bar.scrollon1 .aside_title {
   font-size: 30px;
   font-weight: bolder;
   margin-bottom: 30px;
 }
-#aside_bar.scrollon .aside_img {
+#aside_bar.scrollon1 .aside_img {
   width: 300px;
   height: 200px;
   margin-bottom: 30px;
   background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2020/06/Overview-of-mens-weight-training-programs.png?ezimgfmt=ng%3Awebp%2Fngcb4");
   background-size: contain;
 }
-#aside_bar.scrollon .aside_name {
+#aside_bar.scrollon1 .aside_name {
   font-size: 20px;
 }
 

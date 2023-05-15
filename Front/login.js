@@ -1,8 +1,9 @@
 const Show = document.getElementsByClassName("eye")[0];
 const PassWord = document.getElementsByClassName("login_pw")[0];
+const check = document.getElementsByClassName("checkbox")[0];
+const loginId = document.getElementsByClassName("login_id")[0];
 
 Show.addEventListener('mouseup',function(){
-    console.log("e");
     if(PassWord.type === "password"){
         PassWord.type = "text";
     }
@@ -10,3 +11,4 @@ Show.addEventListener('mouseup',function(){
         PassWord.type = "password";
     }
 })
+

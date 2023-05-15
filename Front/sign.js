@@ -67,6 +67,7 @@ joinName.addEventListener('input', function(){
 })
 
 const Confirm = document.getElementById("confirm");
+const loginLink = 'login.html';
 
 Confirm.addEventListener("mouseup",function(){
     if(!reg_ID.test(joinId.value)){
@@ -83,6 +84,6 @@ Confirm.addEventListener("mouseup",function(){
     }
     else {
         alert('회원가입에 성공하셨습니다.');
-        history.back();
+        window.open(loginLink);
     }
 })
