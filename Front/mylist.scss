@@ -80,13 +80,12 @@ ul{
     background-color: white;
     color: black;
 }
-#wrap_content{
-    position: relative;
-    right: 200px;
+#wrap_content_{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    justify-content: space-around;
+}
+#wrap_content{
+    display: grid;
     [id*=wrap]{
         margin-bottom: 50px;
     }
@@ -103,6 +102,25 @@ ul{
     [class*=name]{
         font-size: 25px;
     }
+    #wrap_shoulder{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #wrap_chest{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #wrap_back{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #wrap_leg{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    #calender_ui{
+        grid-column: 2/3;
+    }
     #shoulder{
         display: grid;
         margin: 0px 5px;
@@ -112,6 +130,7 @@ ul{
                 display: grid;
                 place-items: center;
                 .shoulder_1_img{
+                    position: relative;
                     background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2021/11/Incline-one-arm-dumbbell-bench-press.png?ezimgfmt=ng%3Awebp%2Fngcb4");
                     background-size: contain;
                 }
@@ -131,6 +150,7 @@ ul{
             display: grid;
             place-items: center;
             .chest_1_img{
+                position: relative;
                 background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2022/02/Incline-dumbbell-fly-on-a-stability-ball-1024x683.png?ezimgfmt=ng:webp/ngcb4");
                 background-size: contain;
             }
@@ -145,6 +165,7 @@ ul{
             display: grid;
             place-items: center;
             .back_1_img{
+                position: relative;
                 background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2022/05/Weighted-close-neutral-grip-pull-up.png?ezimgfmt=ng%3Awebp%2Fngcb4");
                 background-size: contain;
             }
@@ -159,6 +180,7 @@ ul{
             display: grid;
             place-items: center;
             .leg_1_img{
+                position: relative;
                 background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2022/11/Dumbbell-squat-to-dumbbell-curl-1024x683.png?ezimgfmt=ngcb4/notWebP");
                 background-size: contain;
             }
@@ -166,6 +188,28 @@ ul{
         
     }
 }
+
+//목표로 갈 운동 선택
+.my_check{
+    position: absolute;
+    right: 5px;;
+    bottom: 5px;;
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgb(28, 28, 32);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    .my_check_.check{
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background-color: rgb(68, 68, 78);
+    }
+}
+
 //calender
 *,
 *::before,
@@ -175,13 +219,12 @@ ul{
     box-sizing: border-box
 }
 
-#calender_ui.scrollon{
-    position: fixed;
-    right: 50px;
-    bottom: 30px;
-    width: 500px;
+#calender_ui{
+    position: sticky;
+    top: 150px;
+    width: 350px;
+    margin-left: 50px;
     display: flex;
-    padding: 5vh 5vw;
     color: #37474f;
     line-height: 1.5;
     font-family: Lato, sans-serif;
@@ -220,9 +263,10 @@ ul{
     0 0.5em 0.5em 0.125em rgba(0,20,50,0.1);
 }
 
-@media (min-width: 500px) {
+@media (min-width: 350px) {
     .calendar-wrap {
-    width: 450px;
+    width: 350px;
+    height: 400px;
     font-size: 1.25rem;
     }
 }

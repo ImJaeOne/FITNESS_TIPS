@@ -1,15 +1,3 @@
-const calenderUi = document.getElementById("calender_ui");
-
-window.onscroll = function(){scrollfunction2()};
-
-function scrollfunction2(){
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
-        calenderUi.classList.add('scrollon')
-    } else{
-        calenderUi.classList.remove('scrollon');
-    }
-}
-
 var dragging = false;
 var days = document.querySelectorAll('.day');
 var offset = 0;
@@ -20,12 +8,12 @@ function activateDay() {
     var activeBItem = document.querySelector('.active-b');
 
     if (activeAItem && activeBItem) {
-    clearActiveDays();
-    clearRange();
-    activeElement.classList.add('active-a');
-    return;
+        clearActiveDays();
+        clearRange();
+        activeElement.classList.add('active-a');
+        return;
     }
-  
+
     if (activeAItem) activeElement.classList.add('active-b');
     else activeElement.classList.add('active-a');
 }
