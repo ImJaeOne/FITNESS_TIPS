@@ -90,25 +90,59 @@ ul {
   color: #ffffff;
 }
 
+#wrap_content_ {
+  display: flex;
+  justify-content: center;
+}
+
 #wrap_content {
   display: grid;
-  grid-template-columns: 2.5fr 1fr;
+}
+#wrap_content #aside_bar {
+  width: 320px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  position: sticky;
+  margin-left: 100px;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 500px;
+}
+#wrap_content #aside_bar .aside_title {
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+#wrap_content #aside_bar .aside_img {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 30px;
+  background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2020/06/Overview-of-mens-weight-training-programs.png?ezimgfmt=ng%3Awebp%2Fngcb4");
+  background-size: contain;
+}
+#wrap_content #aside_bar .aside_name {
+  font-size: 20px;
 }
 #wrap_content #explain {
+  width: 830px;
+  grid-column: 1/2;
+  grid-row: 1/2;
   margin-left: 40px;
   margin-bottom: 40px;
 }
 #wrap_content #explain #exercise_name {
+  position: relative;
   display: flex;
-  justify-content: space-between;
   font-size: 40px;
   border-bottom: 10px solid black;
   margin-bottom: 40px;
 }
 #wrap_content #explain #exercise_name .add {
-  position: relative;
-  left: -40px;
+  position: absolute;
   top: 10px;
+  right: 40px;
   cursor: pointer;
 }
 #wrap_content #explain #exercise_name .add .width {
@@ -126,8 +160,8 @@ ul {
   border-left: 5px solid black;
 }
 #wrap_content #explain #exercise_img {
-  width: 900px;
-  height: 600px;
+  width: 810px;
+  height: 540px;
   margin-bottom: 40px;
   background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2021/11/Incline-one-arm-dumbbell-bench-press.png?ezimgfmt=ng%3Awebp%2Fngcb4");
   background-size: contain;
@@ -140,56 +174,6 @@ ul {
 #wrap_content #explain #exercise_content li span {
   font-size: 35px;
   font-weight: bold;
-}
-
-#aside_bar {
-  position: fixed;
-  right: 30px;
-  top: 300px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 500px;
-}
-#aside_bar .aside_title {
-  font-size: 30px;
-  font-weight: bolder;
-  margin-bottom: 30px;
-}
-#aside_bar .aside_img {
-  width: 300px;
-  height: 200px;
-  margin-bottom: 30px;
-  background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2020/06/Overview-of-mens-weight-training-programs.png?ezimgfmt=ng%3Awebp%2Fngcb4");
-  background-size: contain;
-}
-#aside_bar .aside_name {
-  font-size: 20px;
-}
-
-#aside_bar.scrollon2 {
-  position: fixed;
-  right: 30px;
-  top: 100px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 500px;
-}
-#aside_bar.scrollon2 .aside_title {
-  font-size: 30px;
-  font-weight: bolder;
-  margin-bottom: 30px;
-}
-#aside_bar.scrollon2 .aside_img {
-  width: 300px;
-  height: 200px;
-  margin-bottom: 30px;
-  background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2020/06/Overview-of-mens-weight-training-programs.png?ezimgfmt=ng%3Awebp%2Fngcb4");
-  background-size: contain;
-}
-#aside_bar.scrollon2 .aside_name {
-  font-size: 20px;
 }
 
 #icon {

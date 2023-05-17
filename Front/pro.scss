@@ -102,6 +102,9 @@ ul{
         justify-content: center;
         flex-direction: column;
         height: 500px;
+    }
+    #aside_bar{
+        
         .aside_title{
             font-size: 30px;
             font-weight: bolder;
@@ -111,10 +114,11 @@ ul{
             width: 300px;
             height: 200px;
             margin-bottom: 30px;
-            background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2020/06/Overview-of-mens-weight-training-programs.png?ezimgfmt=ng%3Awebp%2Fngcb4");
+            background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2021/11/Incline-one-arm-dumbbell-bench-press.png?ezimgfmt=ng%3Awebp%2Fngcb4");
             background-size: contain;
         }
         .aside_name{
+            text-align: center;
             font-size: 20px;
         }
     }
@@ -155,7 +159,7 @@ ul{
             width: 810px;
             height: 540px;
             margin-bottom: 40px;
-            background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2021/11/Incline-one-arm-dumbbell-bench-press.png?ezimgfmt=ng%3Awebp%2Fngcb4");
+            background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2020/06/Overview-of-mens-weight-training-programs.png?ezimgfmt=ng%3Awebp%2Fngcb4");
             background-size: contain;
         }
         #exercise_content{

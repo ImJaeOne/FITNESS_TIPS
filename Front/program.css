@@ -130,53 +130,11 @@ ul {
   place-items: center;
 }
 #wrap_content #shoulder .s_inner_1 a .shoulder_1_img {
-  background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2021/11/Incline-one-arm-dumbbell-bench-press.png?ezimgfmt=ng%3Awebp%2Fngcb4");
+  background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2020/06/Overview-of-mens-weight-training-programs.png?ezimgfmt=ngcb4/notWebP");
   background-size: contain;
 }
 #wrap_content #shoulder .s_inner_1 .shoulder_1_img {
-  background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2021/11/Incline-one-arm-dumbbell-bench-press.png?ezimgfmt=ng%3Awebp%2Fngcb4");
-  background-size: contain;
-}
-#wrap_content #chest {
-  display: grid;
-  margin: 0px 5px;
-  grid-template-columns: auto auto auto;
-  grid-gap: 10px;
-}
-#wrap_content #chest .c_inner_1 {
-  display: grid;
-  place-items: center;
-}
-#wrap_content #chest .c_inner_1 .chest_1_img {
-  background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2022/02/Incline-dumbbell-fly-on-a-stability-ball-1024x683.png?ezimgfmt=ng:webp/ngcb4");
-  background-size: contain;
-}
-#wrap_content #back {
-  display: grid;
-  margin: 0px 5px;
-  grid-template-columns: auto auto auto;
-  grid-gap: 10px;
-}
-#wrap_content #back .b_inner_1 {
-  display: grid;
-  place-items: center;
-}
-#wrap_content #back .b_inner_1 .back_1_img {
-  background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2022/05/Weighted-close-neutral-grip-pull-up.png?ezimgfmt=ng%3Awebp%2Fngcb4");
-  background-size: contain;
-}
-#wrap_content #leg {
-  display: grid;
-  margin: 0px 5px;
-  grid-template-columns: auto auto auto;
-  grid-gap: 10px;
-}
-#wrap_content #leg .l_inner_1 {
-  display: grid;
-  place-items: center;
-}
-#wrap_content #leg .l_inner_1 .leg_1_img {
-  background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2022/11/Dumbbell-squat-to-dumbbell-curl-1024x683.png?ezimgfmt=ngcb4/notWebP");
+  background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2020/06/Overview-of-mens-weight-training-programs.png?ezimgfmt=ngcb4/notWebP");
   background-size: contain;
 }
 
@@ -366,4 +324,4 @@ ul {
 
 #footer ._ {
   color: #ffffff;
-}/*# sourceMappingURL=exercise.css.map */
+}/*# sourceMappingURL=program.css.map */

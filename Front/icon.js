@@ -2,7 +2,6 @@
 const topBtn = document.getElementsByClassName("topBtn")[0];
 const searchBtn = document.getElementsByClassName("searchBtn")[0];
 const searchImg = document.getElementsByClassName("fas fa-search")[0];
-const asideBar = document.getElementById("aside_bar");
 
 window.onscroll = function(){scrollfunction()};
 topBtn.addEventListener("click",topfunction);
@@ -11,11 +10,9 @@ function scrollfunction(){
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
         topBtn.classList.add('scrollon');
         topBtn.classList.remove('scrolloff');
-        asideBar.classList.add('scrollon2');
     } else{
         topBtn.classList.add('scrolloff');
         topBtn.classList.remove('scrollon');
-        asideBar.classList.remove('scrollon2');
     }
 }
 

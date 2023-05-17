@@ -14,7 +14,6 @@ body{
 .korean{
     font-family : 'Noto Sans KR';
 }
-
 a{
     
     &:link{
@@ -49,11 +48,10 @@ ul{
     justify-content: center;
     position: absolute;
     cursor: pointer;
-    min-width: 660px;
+    min-width: 780px;
 }
 #wrap_nav {
     position: absolute;
-    z-index: 9999;
     min-width: 800px;
     width: 100%;
     height: 80px;
@@ -87,90 +85,55 @@ ul{
 }
 #wrap_content_{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 #wrap_content{
-    display: grid;
-    #aside_bar{
-        width: 320px;
-        grid-column: 2/3;
-        grid-row: 1/2;
-        position: sticky;
-        margin-left: 100px;
-        top: 50px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        height: 500px;
-        .aside_title{
-            font-size: 30px;
-            font-weight: bolder;
-            margin-bottom: 30px;
-        }
-        .aside_img{
-            width: 300px;
-            height: 200px;
-            margin-bottom: 30px;
-            background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2020/06/Overview-of-mens-weight-training-programs.png?ezimgfmt=ng%3Awebp%2Fngcb4");
-            background-size: contain;
-        }
-        .aside_name{
-            font-size: 20px;
-        }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    [id*=wrap]{
+        margin-bottom: 50px;
     }
-    #explain{
-        width: 830px;
-        grid-column: 1/2;
-        grid-row: 1/2;
-        margin-left: 40px;
-        margin-bottom: 40px;
-        #exercise_name{
-            position: relative;
-            display: flex;
-            font-size: 40px;
-            border-bottom: 10px solid black;
-            margin-bottom: 40px;
-            .add{
-                position: absolute;
-                top: 10px;
-                right: 40px;
-                cursor: pointer;
-                .width{
-                    position : absolute;
-                    top: 11px;
-                    width: 30px;
-                    height: 30px;
-                    border-top: 5px solid black;
-                }
-                .height{
-                    left: 13px;
-                    position: absolute;
-                    width: 30px;
-                    height: 30px;
-                    border-left: 5px solid black;
+    [id*=bar]{
+        font-size: 40px;
+        border-bottom: 10px solid black;
+        margin-bottom: 10px;
+    }
+    [class*=img]{
+        width: 375px;
+        height: 250px;
+        border: 3px solid black;
+    }
+    [class*=name]{
+        font-size: 25px;
+    }
+    [class*=inner]{
+        cursor: pointer;
+    }
+    #shoulder{
+        display: grid;
+        margin: 0px 5px;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+        .s_inner_1{
+            a{
+                display: grid;
+                place-items: center;
+                .shoulder_1_img{
+                    background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2020/06/Overview-of-mens-weight-training-programs.png?ezimgfmt=ngcb4/notWebP");
+                    background-size: contain;
                 }
             }
-        }
-        #exercise_img{
-            width: 810px;
-            height: 540px;
-            margin-bottom: 40px;
-            background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2021/11/Incline-one-arm-dumbbell-bench-press.png?ezimgfmt=ng%3Awebp%2Fngcb4");
-            background-size: contain;
-        }
-        #exercise_content{
-            li{
-                font-size: 25px;
-                margin-bottom: 10px;
-                font-weight: light;
-                span{
-                    font-size: 35px;
-                    font-weight: bold;
-                }
+            //나중에 지울거...
+            .shoulder_1_img{
+                background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2020/06/Overview-of-mens-weight-training-programs.png?ezimgfmt=ngcb4/notWebP");
+                background-size: contain;
             }
         }
     }
 }
+//icon
 #icon{
     z-index: 9999;
     position: fixed;

@@ -48,11 +48,12 @@ ul {
   justify-content: center;
   position: absolute;
   cursor: pointer;
-  min-width: 780px;
+  min-width: 660px;
 }
 
 #wrap_nav {
   position: absolute;
+  z-index: 9999;
   min-width: 800px;
   width: 100%;
   height: 80px;
@@ -91,93 +92,89 @@ ul {
 
 #wrap_content_ {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 #wrap_content {
+  display: grid;
+}
+#wrap_content #aside_bar {
+  width: 320px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  position: sticky;
+  margin-left: 100px;
+  top: 50px;
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
+  height: 500px;
 }
-#wrap_content [id*=wrap] {
-  margin-bottom: 50px;
+#wrap_content #aside_bar .aside_title {
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 30px;
 }
-#wrap_content [id*=bar] {
+#wrap_content #aside_bar .aside_img {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 30px;
+  background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2021/11/Incline-one-arm-dumbbell-bench-press.png?ezimgfmt=ng%3Awebp%2Fngcb4");
+  background-size: contain;
+}
+#wrap_content #aside_bar .aside_name {
+  text-align: center;
+  font-size: 20px;
+}
+#wrap_content #explain {
+  width: 830px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+#wrap_content #explain #exercise_name {
+  position: relative;
+  display: flex;
   font-size: 40px;
   border-bottom: 10px solid black;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
-#wrap_content [class*=img] {
-  width: 375px;
-  height: 250px;
-  border: 3px solid black;
-}
-#wrap_content [class*=name] {
-  font-size: 25px;
-}
-#wrap_content [class*=inner] {
+#wrap_content #explain #exercise_name .add {
+  position: absolute;
+  top: 10px;
+  right: 40px;
   cursor: pointer;
 }
-#wrap_content #shoulder {
-  display: grid;
-  margin: 0px 5px;
-  grid-template-columns: auto auto auto;
-  grid-gap: 20px;
+#wrap_content #explain #exercise_name .add .width {
+  position: absolute;
+  top: 11px;
+  width: 30px;
+  height: 30px;
+  border-top: 5px solid black;
 }
-#wrap_content #shoulder .s_inner_1 a {
-  display: grid;
-  place-items: center;
+#wrap_content #explain #exercise_name .add .height {
+  left: 13px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-left: 5px solid black;
 }
-#wrap_content #shoulder .s_inner_1 a .shoulder_1_img {
-  background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2021/11/Incline-one-arm-dumbbell-bench-press.png?ezimgfmt=ng%3Awebp%2Fngcb4");
+#wrap_content #explain #exercise_img {
+  width: 810px;
+  height: 540px;
+  margin-bottom: 40px;
+  background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2020/06/Overview-of-mens-weight-training-programs.png?ezimgfmt=ng%3Awebp%2Fngcb4");
   background-size: contain;
 }
-#wrap_content #shoulder .s_inner_1 .shoulder_1_img {
-  background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2021/11/Incline-one-arm-dumbbell-bench-press.png?ezimgfmt=ng%3Awebp%2Fngcb4");
-  background-size: contain;
+#wrap_content #explain #exercise_content li {
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: light;
 }
-#wrap_content #chest {
-  display: grid;
-  margin: 0px 5px;
-  grid-template-columns: auto auto auto;
-  grid-gap: 10px;
-}
-#wrap_content #chest .c_inner_1 {
-  display: grid;
-  place-items: center;
-}
-#wrap_content #chest .c_inner_1 .chest_1_img {
-  background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2022/02/Incline-dumbbell-fly-on-a-stability-ball-1024x683.png?ezimgfmt=ng:webp/ngcb4");
-  background-size: contain;
-}
-#wrap_content #back {
-  display: grid;
-  margin: 0px 5px;
-  grid-template-columns: auto auto auto;
-  grid-gap: 10px;
-}
-#wrap_content #back .b_inner_1 {
-  display: grid;
-  place-items: center;
-}
-#wrap_content #back .b_inner_1 .back_1_img {
-  background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2022/05/Weighted-close-neutral-grip-pull-up.png?ezimgfmt=ng%3Awebp%2Fngcb4");
-  background-size: contain;
-}
-#wrap_content #leg {
-  display: grid;
-  margin: 0px 5px;
-  grid-template-columns: auto auto auto;
-  grid-gap: 10px;
-}
-#wrap_content #leg .l_inner_1 {
-  display: grid;
-  place-items: center;
-}
-#wrap_content #leg .l_inner_1 .leg_1_img {
-  background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2022/11/Dumbbell-squat-to-dumbbell-curl-1024x683.png?ezimgfmt=ngcb4/notWebP");
-  background-size: contain;
+#wrap_content #explain #exercise_content li span {
+  font-size: 35px;
+  font-weight: bold;
 }
 
 #icon {
@@ -366,4 +363,4 @@ ul {
 
 #footer ._ {
   color: #ffffff;
-}/*# sourceMappingURL=exercise.css.map */
+}/*# sourceMappingURL=pro.css.map */

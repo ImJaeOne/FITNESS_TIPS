@@ -70,6 +70,7 @@ ul{
 }
 #wrap_nav.nav{
     position: fixed;
+    z-index: 9999;
     top: 0px;
     color: black;
     background-color: white;
@@ -79,19 +80,12 @@ ul{
     background-color: white;
     color: black;
 }
-#wrap_nav [class*=nav].select{
-    background-color: #000000;
-    color: #ffffff;
-}
 #wrap_content_{
     display: flex;
     justify-content: space-around;
 }
 #wrap_content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    display: grid;
     [id*=wrap]{
         margin-bottom: 50px;
     }
@@ -108,23 +102,38 @@ ul{
     [class*=name]{
         font-size: 25px;
     }
-    [class*=inner]{
-        cursor: pointer;
+    #wrap_shoulder{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #wrap_chest{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #wrap_back{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #wrap_leg{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    #calender_ui{
+        grid-column: 2/3;
     }
     #shoulder{
         display: grid;
         margin: 0px 5px;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
         grid-gap: 20px;
         .s_inner_1{
-            a{
                 display: grid;
                 place-items: center;
                 .shoulder_1_img{
+                    position: relative;
                     background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2021/11/Incline-one-arm-dumbbell-bench-press.png?ezimgfmt=ng%3Awebp%2Fngcb4");
                     background-size: contain;
                 }
-            }
             //나중에 지울거...
             .shoulder_1_img{
                 background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2021/11/Incline-one-arm-dumbbell-bench-press.png?ezimgfmt=ng%3Awebp%2Fngcb4");
@@ -135,12 +144,13 @@ ul{
     #chest{
         display: grid;
         margin: 0px 5px;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
         grid-gap: 10px;
         .c_inner_1{
             display: grid;
             place-items: center;
             .chest_1_img{
+                position: relative;
                 background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2022/02/Incline-dumbbell-fly-on-a-stability-ball-1024x683.png?ezimgfmt=ng:webp/ngcb4");
                 background-size: contain;
             }
@@ -149,12 +159,13 @@ ul{
     #back{
         display: grid;
         margin: 0px 5px;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
         grid-gap: 10px;
         .b_inner_1{
             display: grid;
             place-items: center;
             .back_1_img{
+                position: relative;
                 background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2022/05/Weighted-close-neutral-grip-pull-up.png?ezimgfmt=ng%3Awebp%2Fngcb4");
                 background-size: contain;
             }
@@ -163,12 +174,13 @@ ul{
     #leg{
         display: grid;
         margin: 0px 5px;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
         grid-gap: 10px;
         .l_inner_1{
             display: grid;
             place-items: center;
             .leg_1_img{
+                position: relative;
                 background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2022/11/Dumbbell-squat-to-dumbbell-curl-1024x683.png?ezimgfmt=ngcb4/notWebP");
                 background-size: contain;
             }
@@ -176,7 +188,236 @@ ul{
         
     }
 }
-//icon
+
+//목표로 갈 운동 선택
+.my_check{
+    position: absolute;
+    right: 5px;;
+    bottom: 5px;;
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgb(28, 28, 32);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    .my_check_.check{
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background-color: rgb(68, 68, 78);
+    }
+}
+
+//calender
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+#calender_ui{
+    position: sticky;
+    top: 150px;
+    width: 350px;
+    margin-left: 50px;
+    display: flex;
+    color: #37474f;
+    line-height: 1.5;
+    font-family: Lato, sans-serif;
+}
+
+.note {
+    font-size: calc(0.5vw + 0.75rem);
+    text-align: center;
+    opacity: 0.5;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.6875em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.0625em;
+    background-color: #37474F;
+    border-radius: 1.5em;
+    cursor: pointer;
+}
+
+.calendar-wrap {
+    width: 100%;
+    padding: 0.75em;
+    border: 0;
+    font-size: 4vw;
+    background-color: #fff;
+    border-radius: 1.5em;
+    user-select: none;
+    box-shadow:
+    0 0.0625em 0.25em rgba(0,20,50,0.2),
+    0 0.5em 0.5em 0.125em rgba(0,20,50,0.1);
+}
+
+@media (min-width: 350px) {
+    .calendar-wrap {
+    width: 350px;
+    height: 400px;
+    font-size: 1.25rem;
+    }
+}
+
+.month-year {
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+}
+
+.calendar {
+    table-layout: fixed;
+    width: 100%;
+    margin-bottom: 0.75em;
+    overflow: hidden;
+    border-collapse: collapse;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.day-title {
+    width: 4em;
+    height: 3em;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.0625em;
+    box-shadow:
+    inset 0 -0.875em #fff,
+    inset 0 -1em rgba(0,20,50,0.1);
+}
+
+.day {
+    position: relative;
+    height: 20px;
+}
+
+.day:focus {
+    outline: none;
+}
+
+.day:focus .day-number::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    transform: translate(-50%,-50%);
+    border: 0.25em solid #0288d1;
+    border-radius: 50%;
+}
+
+.day.active-a:focus .day-number::after,
+.day.active-b:focus .day-number::after {
+    width: 100%;
+    height: 100%;
+}
+
+.day.today:focus .day-number::after {
+    width: 102%;
+    height: 102%;
+}
+
+.day:hover span.day-number {
+    color: #0288d1;
+}
+
+.day:first-child,
+.day:last-child {
+    color: rgba(0,0,0,0.5);
+}
+
+.day.range {
+    color: #0288d1;
+    background-color: #e1f5fe;
+}
+
+.day.range.active-a,
+.day:not(.range) + .day.range.active-b {
+    background-color: transparent;
+    box-shadow: inset -1.5em 0 #e1f5fe;
+}
+
+.day.range.active-b,
+.day.range + .day.range.active-a {
+    background-color: transparent;
+    box-shadow: inset 1.5em 0 #e1f5fe;
+}
+
+.day.range.active-a:first-child,
+.day.range.active-b:first-child {
+    box-shadow: none;
+}
+
+.day.range.active-a:first-child + .day.range,
+.day.range.active-b:first-child + .day.range {
+    box-shadow: -1.5em 0 #e1f5fe;
+}
+
+.day.range.active-a:first-child + .day:not(.range),
+.day.range.active-b:first-child + .day:not(.range) {
+    box-shadow: -4.5em 0 #e1f5fe;
+}
+
+.day.range.active-a:first-child + .day.range.active-b {
+    box-shadow:
+    -1.5em 0 #e1f5fe,
+    inset 1.5em 0 #e1f5fe;
+}
+
+.day-number {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.day.active-a span.day-number,
+.day.active-b span.day-number {
+    color: #fff;
+    background-color: #03A9F4;
+}
+
+.day.prev-mon .day-number,
+.day.next-mon .day-number {
+    color: rgba(0,0,0,0.3);
+}
+
+.day.prev-mon[class*="active"] .day-number,
+.day.next-mon[class*="active"] .day-number {
+    color: rgba(255,255,255,0.5);
+    background-color: #81D4FA;
+}
+
+.day.today span.day-number {
+    color: #fff;
+    border: 0.25em solid transparent;
+    box-shadow: inset 0 0 0 2em #37474F;
+}
+
+.calendar-wrap .reset {
+    display: block;
+}
+
+  //icon
 #icon{
     z-index: 9999;
     position: fixed;
@@ -315,6 +556,7 @@ ul{
     transform: translate3d(8px, -1px, 0) rotate(45deg);
     background-color: #ffffff;
 }
+/* classlist */
 #icon .searchBtn .blackcircle{
     position: absolute;
     left: 10px;

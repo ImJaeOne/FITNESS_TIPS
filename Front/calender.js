@@ -32,26 +32,26 @@ function clearRange() {
     });
 }
 
-function calculateRange() {
-    var activeAIndex, activeBIndex;
+// function calculateRange() {
+//     var activeAIndex, activeBIndex;
 
-    days.forEach((item, index) => {
-        if (item.classList.contains('active-a')) activeAIndex = index;
-        if (item.classList.contains('active-b')) activeBIndex = index;
-    });
+//     days.forEach((item, index) => {
+//         if (item.classList.contains('active-a')) activeAIndex = index;
+//         if (item.classList.contains('active-b')) activeBIndex = index;
+//     });
 
-    if (activeAIndex < activeBIndex) {
-        for (var i = activeAIndex; i <= activeBIndex; i++) {
-        days[i].classList.add('range');
-        }
-    }
+//     if (activeAIndex < activeBIndex) {
+//         for (var i = activeAIndex; i <= activeBIndex; i++) {
+//         days[i].classList.add('range');
+//         }
+//     }
 
-    if (activeAIndex > activeBIndex) {
-        for (var i = activeAIndex; i >= activeBIndex; i--) {
-        days[i].classList.add('range');
-        }
-    }
-}
+//     if (activeAIndex > activeBIndex) {
+//         for (var i = activeAIndex; i >= activeBIndex; i--) {
+//         days[i].classList.add('range');
+//         }
+//     }
+// }
 
 function startMove(item) {
     dragging = true;

@@ -40,16 +40,5 @@ function getElementIndex(element, range) {
     });
 });
 
-// const calenderUi = document.getElementById("calender_ui");
-
-// window.addEventListener('scroll',function(){
-//     const calenderScroll = 266;
-//     if(document.body.scrollTop > calenderScroll || document.documentElement.scrollTop > calenderScroll){
-//         calenderUi.classList.add('scrollon1');
-//     } else{
-//         calenderUi.classList.remove('scrollon1');
-//     }
-// })
-
 
 
