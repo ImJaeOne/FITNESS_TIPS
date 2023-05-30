@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mylist</title>
+    <link rel="stylesheet" href="write.css">
+    <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div id="title">
+            <a href="index.html">FITNESS TIPS</a>
+        </div>
+        <!--네비게이션--> 
+        <ul class="korean" id="wrap_nav">
+            <li>
+                <a href="exercise.html">운동 종류</a>
+            </li>
+            <li class="nav_exercise">
+                <a href="board.html">게시판</a>
+            </li>
+            <li>
+                <a href="mylist.html">내 운동 리스트</a>
+            </li>
+            <li>
+                <a href="goal.html">내 목표</a>
+            </li>
+            <li>
+                <a href="program.html">운동 프로그램</a>
+            </li>
+            <li>
+                <a href="login.html">로그인</a>
+            </li>
+            <li>
+                <a href="sign_up.html">회원가입</a>
+            </li>
+        </ul>
+    </header>
+    <main id="wrap_content_">
+        <div id="wrap_content">
+            <section id="board">
+                <div id="board_bar">
+                    글 작성
+                </div>
+                <div id="board_category">
+                    <select>
+                        <option>식단</option>
+                        <option>자세</option>
+                        <option>루틴</option>
+                    </select>
+                </div>
+                <div id="editor"></div>
+                <div id="bottom">
+                    <div id="submit">
+                        <input type="button" value="글쓰기">
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="_">©JW Corp. Patience is a virtue.</div>
+    </footer>
+    <ul id="icon">
+        <div class="searchBtn">
+            <input type="text" class="search" placeholder="Search">
+            <button class="searchBtn_">
+                <div class="fas fa-seacrh"></div>
+            </button>
+        </div>
+        <div class="topBtn">
+            <div class="whitearrow"></div>
+        </div>
+    </ul>
+    <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+    <script src="https://uicdn.toast.com/editor/latest/i18n/ko-kr.min.js"></script>
+    <script src="write.js"></script>
+    <script src="icon.js"></script>
+</body>
+</html>

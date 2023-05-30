@@ -48,7 +48,7 @@ ul{
     justify-content: center;
     position: absolute;
     cursor: pointer;
-    min-width: 780px;
+    min-width: 820px;
 }
 #wrap_nav {
     position: absolute;
@@ -83,148 +83,65 @@ ul{
 #wrap_content_{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 50px;
 }
 #wrap_content{
-    display: grid;
-    [id*=wrap]{
-        margin-bottom: 50px;
-    }
-    [id*=bar]{
-        font-size: 40px;
-        border-bottom: 10px solid black;
-        margin-bottom: 10px;
-    }
-    [class*=img]{
-        width: 375px;
-        height: 250px;
-        border: 3px solid black;
-    }
-    [class*=name]{
-        font-size: 25px;
-    }
-    #day{
-        font-size: 60px;
-        grid-column: 1/2;
-        grid-row: 1/1.5;
-        margin-bottom: 30px;
-    }
-    #wrap_shoulder{
-        grid-column: 1/2;
-        grid-row: 1.5/2.5;
-    }
-    #wrap_chest{
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-    #wrap_back{
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
-    #wrap_leg{
-        grid-column: 1/2;
-        grid-row: 5/6;
-    }
-    #graph{
-        grid-column: 2/3;
-    }
-    #shoulder{
-        display: grid;
-        margin: 0px 5px;
-        grid-template-columns: auto auto;
-        grid-gap: 20px;
-        .s_inner_1{
+    width: 60%;
+    min-width: 800px;
+    border-bottom: 5px solid black;
+    margin-bottom: 10px;
+    #board{
+        #board_bar{
+            display: flex;
+            justify-content: space-between;
+            font-size: 40px;
+            border-bottom: 10px solid black;
+            margin-bottom: 20px;
+            a{
+                font-size: 20px;
+            }
+        }
+        #write_list{
+            margin-bottom: 20px;
+            .nav{
                 display: grid;
-                place-items: center;
-                .shoulder_1_img{
-                    position: relative;
-                    background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2021/11/Incline-one-arm-dumbbell-bench-press.png?ezimgfmt=ng%3Awebp%2Fngcb4");
-                    background-size: contain;
+                grid-template-columns: 20% 40% 20% 20%;
+                padding: 10px;
+                border-top: 3px solid black;
+                border-bottom: 3px solid rgb(136, 126, 126);
+                li{
+                text-align: center;
                 }
-            //나중에 지울거...
-            .shoulder_1_img{
-                background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2021/11/Incline-one-arm-dumbbell-bench-press.png?ezimgfmt=ng%3Awebp%2Fngcb4");
-                background-size: contain;
+            }
+            .list{
+                display: grid;
+                grid-template-columns: 20% 40% 20% 20%;
+                padding: 5px;
+                span{
+                    text-align: center;
+                    cursor: pointer;
+                }
+                border-bottom: 1px solid rgb(136, 126, 126);
             }
         }
-    }
-    #chest{
-        display: grid;
-        margin: 0px 5px;
-        grid-template-columns: auto auto;
-        grid-gap: 10px;
-        .c_inner_1{
-            display: grid;
-            place-items: center;
-            .chest_1_img{
-                position: relative;
-                background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2022/02/Incline-dumbbell-fly-on-a-stability-ball-1024x683.png?ezimgfmt=ng:webp/ngcb4");
-                background-size: contain;
+        #page{
+                display: flex;
+                justify-content: center;
+                .page{ 
+                    display: flex;
+                    div{
+                        color:rgb(136, 126, 126);
+                        text-align: center;
+                        font-size: 25px;
+                        margin: 10px;
+                        cursor: pointer;
+                    }
+                    .select{
+                        color: black;
+                    }
+                }
             }
-        }
     }
-    #back{
-        display: grid;
-        margin: 0px 5px;
-        grid-template-columns: auto auto;
-        grid-gap: 10px;
-        .b_inner_1{
-            display: grid;
-            place-items: center;
-            .back_1_img{
-                position: relative;
-                background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2022/05/Weighted-close-neutral-grip-pull-up.png?ezimgfmt=ng%3Awebp%2Fngcb4");
-                background-size: contain;
-            }
-        }
-    }
-    #leg{
-        display: grid;
-        margin: 0px 5px;
-        grid-template-columns: auto auto;
-        grid-gap: 10px;
-        .l_inner_1{
-            display: grid;
-            place-items: center;
-            .leg_1_img{
-                position: relative;
-                background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2022/11/Dumbbell-squat-to-dumbbell-curl-1024x683.png?ezimgfmt=ngcb4/notWebP");
-                background-size: contain;
-            }
-        }
-        
-    }
-}
-
-//목표로 갈 운동 선택
-.my_check{
-    position: absolute;
-    right: 5px;;
-    bottom: 5px;;
-    width: 50px;
-    height: 50px;
-    border: 3px solid rgb(28, 28, 32);
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    .my_check_.check{
-        width: 30px;
-        height: 30px;
-        border-radius: 100%;
-        background-color: rgb(68, 68, 78);
-    }
-}
-
-#graph{
-    position: sticky;
-    top: 150px;
-    width: 350px;
-    margin-left: 50px;
-    display: flex;
-    color: #37474f;
-    line-height: 1.5;
-    font-family: Lato, sans-serif;
 }
 
   //icon
@@ -366,7 +283,6 @@ ul{
     transform: translate3d(8px, -1px, 0) rotate(45deg);
     background-color: #ffffff;
 }
-/* classlist */
 #icon .searchBtn .blackcircle{
     position: absolute;
     left: 10px;

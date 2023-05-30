@@ -48,7 +48,7 @@ ul {
   justify-content: center;
   position: absolute;
   cursor: pointer;
-  min-width: 780px;
+  min-width: 820px;
 }
 
 #wrap_nav {
@@ -88,146 +88,64 @@ ul {
 #wrap_content_ {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 50px;
 }
 
 #wrap_content {
-  display: grid;
-}
-#wrap_content [id*=wrap] {
-  margin-bottom: 50px;
-}
-#wrap_content [id*=bar] {
-  font-size: 40px;
-  border-bottom: 10px solid black;
+  width: 60%;
+  min-width: 800px;
+  border-bottom: 5px solid black;
   margin-bottom: 10px;
 }
-#wrap_content [class*=img] {
-  width: 375px;
-  height: 250px;
-  border: 3px solid black;
-}
-#wrap_content [class*=name] {
-  font-size: 25px;
-}
-#wrap_content #day {
-  font-size: 60px;
-  grid-column: 1/2;
-  grid-row: 1/1.5;
-  margin-bottom: 30px;
-}
-#wrap_content #wrap_shoulder {
-  grid-column: 1/2;
-  grid-row: 1.5/2.5;
-}
-#wrap_content #wrap_chest {
-  grid-column: 1/2;
-  grid-row: 3/4;
-}
-#wrap_content #wrap_back {
-  grid-column: 1/2;
-  grid-row: 4/5;
-}
-#wrap_content #wrap_leg {
-  grid-column: 1/2;
-  grid-row: 5/6;
-}
-#wrap_content #graph {
-  grid-column: 2/3;
-}
-#wrap_content #shoulder {
-  display: grid;
-  margin: 0px 5px;
-  grid-template-columns: auto auto;
-  grid-gap: 20px;
-}
-#wrap_content #shoulder .s_inner_1 {
-  display: grid;
-  place-items: center;
-}
-#wrap_content #shoulder .s_inner_1 .shoulder_1_img {
-  position: relative;
-  background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2021/11/Incline-one-arm-dumbbell-bench-press.png?ezimgfmt=ng%3Awebp%2Fngcb4");
-  background-size: contain;
-}
-#wrap_content #shoulder .s_inner_1 .shoulder_1_img {
-  background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2021/11/Incline-one-arm-dumbbell-bench-press.png?ezimgfmt=ng%3Awebp%2Fngcb4");
-  background-size: contain;
-}
-#wrap_content #chest {
-  display: grid;
-  margin: 0px 5px;
-  grid-template-columns: auto auto;
-  grid-gap: 10px;
-}
-#wrap_content #chest .c_inner_1 {
-  display: grid;
-  place-items: center;
-}
-#wrap_content #chest .c_inner_1 .chest_1_img {
-  position: relative;
-  background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2022/02/Incline-dumbbell-fly-on-a-stability-ball-1024x683.png?ezimgfmt=ng:webp/ngcb4");
-  background-size: contain;
-}
-#wrap_content #back {
-  display: grid;
-  margin: 0px 5px;
-  grid-template-columns: auto auto;
-  grid-gap: 10px;
-}
-#wrap_content #back .b_inner_1 {
-  display: grid;
-  place-items: center;
-}
-#wrap_content #back .b_inner_1 .back_1_img {
-  position: relative;
-  background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2022/05/Weighted-close-neutral-grip-pull-up.png?ezimgfmt=ng%3Awebp%2Fngcb4");
-  background-size: contain;
-}
-#wrap_content #leg {
-  display: grid;
-  margin: 0px 5px;
-  grid-template-columns: auto auto;
-  grid-gap: 10px;
-}
-#wrap_content #leg .l_inner_1 {
-  display: grid;
-  place-items: center;
-}
-#wrap_content #leg .l_inner_1 .leg_1_img {
-  position: relative;
-  background-image: url("https://cdn-0.weighttraining.guide/wp-content/uploads/2022/11/Dumbbell-squat-to-dumbbell-curl-1024x683.png?ezimgfmt=ngcb4/notWebP");
-  background-size: contain;
-}
-
-.my_check {
-  position: absolute;
-  right: 5px;
-  bottom: 5px;
-  width: 50px;
-  height: 50px;
-  border: 3px solid rgb(28, 28, 32);
-  border-radius: 100%;
+#wrap_content #board #board_bar {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  font-size: 40px;
+  border-bottom: 10px solid black;
+  margin-bottom: 20px;
+}
+#wrap_content #board #board_bar a {
+  font-size: 20px;
+}
+#wrap_content #board #write_list {
+  margin-bottom: 20px;
+}
+#wrap_content #board #write_list .nav {
+  display: grid;
+  grid-template-columns: 20% 40% 20% 20%;
+  padding: 10px;
+  border-top: 3px solid black;
+  border-bottom: 3px solid rgb(136, 126, 126);
+}
+#wrap_content #board #write_list .nav li {
+  text-align: center;
+}
+#wrap_content #board #write_list .list {
+  display: grid;
+  grid-template-columns: 20% 40% 20% 20%;
+  padding: 5px;
+  border-bottom: 1px solid rgb(136, 126, 126);
+}
+#wrap_content #board #write_list .list span {
+  text-align: center;
   cursor: pointer;
 }
-.my_check .my_check_.check {
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
-  background-color: rgb(68, 68, 78);
-}
-
-#graph {
-  position: sticky;
-  top: 150px;
-  width: 350px;
-  margin-left: 50px;
+#wrap_content #board #page {
   display: flex;
-  color: #37474f;
-  line-height: 1.5;
-  font-family: Lato, sans-serif;
+  justify-content: center;
+}
+#wrap_content #board #page .page {
+  display: flex;
+}
+#wrap_content #board #page .page div {
+  color: rgb(136, 126, 126);
+  text-align: center;
+  font-size: 25px;
+  margin: 10px;
+  cursor: pointer;
+}
+#wrap_content #board #page .page .select {
+  color: black;
 }
 
 #icon {
@@ -383,7 +301,6 @@ ul {
   background-color: #ffffff;
 }
 
-/* classlist */
 #icon .searchBtn .blackcircle {
   position: absolute;
   left: 10px;
@@ -417,4 +334,4 @@ ul {
 
 #footer ._ {
   color: #ffffff;
-}/*# sourceMappingURL=goal.css.map */
+}/*# sourceMappingURL=board.css.map */

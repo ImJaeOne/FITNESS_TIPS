@@ -21,7 +21,7 @@
                 <a href="exercise.html">운동 종류</a>
             </li>
             <li>
-                <a href="write.html">게시판</a>
+                <a href="board.html">게시판</a>
             </li>
             <li>
                 <a href="mylist.html">내 운동 리스트</a>
@@ -42,6 +42,9 @@
     </header>
     <main id="wrap_content_">
         <div id="wrap_content">
+            <div id="day">
+                May 5
+            </div>
             <section id="wrap_shoulder">
                 <div id="shoulder_bar">
                     Shoulder
@@ -198,50 +201,8 @@
                     </div>
                 </div>
             </section>
-            <div id="calender_ui">
+            <div id="graph">
                 <div id="chart-area_"></div>
-                <script>
-                    const el = document.getElementById('chart-area_');
-                const data = {
-                categories: ['Browser'],
-                series: [
-                    {
-                    name: 'Chrome',
-                    data: 46.02,
-                    },
-                    {
-                    name: 'IE',
-                    data: 20.47,
-                    },
-                    {
-                    name: 'Firefox',
-                    data: 17.71,
-                    },
-                    {
-                    name: 'Safari',
-                    data: 5.45,
-                    },
-                    {
-                    name: 'Opera',
-                    data: 3.1,
-                    },
-                    {
-                    name: 'Etc',
-                    data: 7.25,
-                    },
-                ],
-                };
-                const options = {
-                chart: { title: 'Usage share of web browsers', width: 600, height: 400 },
-                series: {
-                    radiusRange: {
-                    inner: '40%',
-                    outer: '100%',
-                    },
-                },
-                };
-                const chart = toastui.Chart.pieChart({ el, data, options });
-                </script>
             </div>
         </div>
     </main>
@@ -260,7 +221,7 @@
         </div>
     </ul>
     <script src="index.js"></script>
-    <script src="mylist.js"></script>
+    <script src="goal_.js"></script>
     <script src="icon.js"></script>
 </body>
 </html>

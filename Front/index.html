@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
     <link rel="stylesheet" href="index.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://uicdn.toast.com/chart/latest/toastui-chart.min.css" />
+    <script src="https://uicdn.toast.com/chart/latest/toastui-chart.min.js"></script>
 </head>
 <body>
     <header id="header">
@@ -18,7 +21,7 @@
                 <a href="exercise.html">운동 종류</a>
             </li>
             <li>
-                <a href="write.html">게시판</a>
+                <a href="board.html">게시판</a>
             </li>
             <li>
                 <a href="mylist.html">내 운동 리스트</a>
@@ -38,8 +41,53 @@
         </ul>
     </header>
     <main id="wrap_content">
-        <div class="inner_1"></div>
-        <div class="inner_2"></div>
+        <div class="inner_1">
+            <div class="content_header">
+                <a href="exercise.html">
+                    EXERCISE
+                </a>
+                <div class="stop"></div>
+            </div>
+            <div class="index_exercise">
+                <div class="index_img1" style="--i: 0">
+                    <img src="https://cdn-0.weighttraining.guide/wp-content/uploads/2021/11/Incline-one-arm-dumbbell-bench-press.png?ezimgfmt=ng%3Awebp%2Fngcb4"></img>
+                    <a href="ex.html">
+                        <div>Incline one-arm dumbbell bench press</div>
+                    </a>
+                </div>
+                <div class="index_img2" style="--i: 60">
+                    <img src="https://cdn-0.weighttraining.guide/wp-content/uploads/2022/02/Incline-dumbbell-fly-on-a-stability-ball-1024x683.png?ezimgfmt=ng:webp/ngcb4"></img>
+                    <div>Incline dumbbell fly on a stability ball</div>
+                </div>
+                <div class="index_img3" style="--i: 120">
+                    <img src="https://cdn-0.weighttraining.guide/wp-content/uploads/2022/05/Weighted-close-neutral-grip-pull-up.png?ezimgfmt=ng%3Awebp%2Fngcb4"></img>
+                    <div>Weighted close neutral-grip pull-up</div>
+                </div>
+                <div class="index_img4" style="--i: 180">
+                    <img src="https://cdn-0.weighttraining.guide/wp-content/uploads/2022/11/Dumbbell-squat-to-dumbbell-curl-1024x683.png?ezimgfmt=ngcb4/notWebP"></img>
+                    <div>Dumbbell squat to dumbbell curl</div>
+                </div>
+                <div class="index_img5" style="--i: 240">
+                    <img src="https://cdn-0.weighttraining.guide/wp-content/uploads/2021/11/Incline-one-arm-dumbbell-bench-press.png?ezimgfmt=ng%3Awebp%2Fngcb4"></img>
+                    <div>Incline one-arm dumbbell bench press</div>
+                </div>
+                <div class="index_img6"style="--i: 300">
+                    <img src="https://cdn-0.weighttraining.guide/wp-content/uploads/2022/02/Incline-dumbbell-fly-on-a-stability-ball-1024x683.png?ezimgfmt=ng:webp/ngcb4"></img>
+                    <div>Incline dumbbell fly on a stability ball</div>
+                </div>
+            </div>
+        </div>
+        <div class="inner_2">
+            <div class="content_header">
+                <a href="goal.html">
+                    GOAL
+                </a>
+            </div>
+            <div id="goal">
+                <div id="chart-area_"></div>
+                <script src="goal.js"></script>
+            </div>
+        </div>
         <div class="inner_3"></div>
     </main>
     <footer id="footer">
@@ -56,7 +104,7 @@
             <div class="whitearrow"></div>
         </div>
     </ul>
-    <script src="index.js"></script>
+    <script src="index_.js"></script>
     <script src="icon.js"></script>
 </body>
 </html>
